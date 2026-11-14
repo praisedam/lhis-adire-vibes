@@ -96,9 +96,9 @@ section{padding-block:56px 0}
 .meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--d2),var(--d3),var(--d4));border-radius:99px;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
 .lvl{margin-top:10px;font:800 20px var(--fd)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:20px 0 4px}
-.stat{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:14px 16px;min-width:0}
+.stat{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:14px 16px;min-width:0;container-type:inline-size}
 .stat:nth-child(1) b{color:var(--d1)}.stat:nth-child(2) b{color:var(--d2)}.stat:nth-child(3) b{color:var(--d5)}.stat:nth-child(4) b{color:var(--d4)}.stat:nth-child(5) b{color:var(--d6)}.stat:nth-child(6) b{color:var(--d4)}
-.stat b{display:block;font:800 clamp(20px,3.6vw,25px) var(--fd);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.stat small{color:var(--mut)}
+.stat b{display:block;font:800 min(25px,12cqw) var(--fd);font-variant-numeric:tabular-nums;white-space:nowrap}.stat small{color:var(--mut)}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 14px}
 .fl{padding:7px 16px;border-radius:99px;border:1.5px solid var(--line);background:var(--surf);font-weight:500;font-size:14px}
 .fl[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
@@ -302,7 +302,7 @@ const T=total(),R=raised(),pc=T?Math.min(100,R/T*100):0;
 $("mt").style.width=pc+"%";
 $("lvl").textContent=pc>=100?"Fully funded. Let us party!":pc>=75?"Almost there!":pc>=50?"Halfway and rising":pc>=25?"Warming up":"Just getting started";
 const S=secs.reduce((a,s)=>a+spent(s),0),P=secs.filter(s=>s.pending).length,PD=secs.reduce((a,s)=>a+paid(s),0);
-$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>Target so far</small></div><div class="stat"><b>${N(R)}</b><small>Raised (${pc.toFixed(0)}% of target)</small></div><div class="stat"><b>${N(S)}</b><small>Vendors chosen</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${R>=T?"Above target":"Still to raise"}</small></div><div class="stat"><b>${P}</b><small>Lines awaiting a figure</small></div><div class="stat"><b>${N(PD)}</b><small>Paid to vendors</small></div>`;
+$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>Target so far</small></div><div class="stat"><b>${N(R)}</b><small>Raised (${pc.toFixed(0)}% of target)</small></div><div class="stat"><b>${N(S)}</b><small>Vendors chosen</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${R>=T?"Above target":"Still to raise"}</small></div><div class="stat"><b>${N(PD)}</b><small>Paid to vendors</small></div>`;
 $("filters").innerHTML=[["all","All"],["adults","Grown-ups"],["kids","Little Stars"],["teens","Teens"],["both","Everyone"]].map(([k,l])=>`<button class="fl" data-fl="${k}" aria-pressed="${flt===k}">${l}</button>`).join("");
 const vis=secs.filter(s=>flt==="all"||(s.group||"both")===flt);
 $("tiles").innerHTML=vis.map(s=>{const sp=spent(s),p=s.budget?Math.min(100,sp/s.budget*100):0,pd=s.pending&&!s.budget;
