@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Àdìrè Vibes | LagosHoms Ilupeju End of Year Thanksgiving</title>
+<title>LagosHoms Ilupeju Estate End of Year Thanksgiving Party</title>
 <meta name="description" content="19 December 2026. Good vibes, great company and unforgettable memories. The plan, the flyers and the budget.">
-<meta property="og:title" content="Àdìrè Vibes | LagosHoms Ilupeju End of Year Thanksgiving">
+<meta property="og:title" content="LagosHoms Ilupeju Estate End of Year Thanksgiving Party">
 <meta property="og:description" content="19 December 2026. Come in your best Adire.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://lhis-adire-vibes.vercel.app/">
-<meta property="og:image" content="https://lhis-adire-vibes.vercel.app/og.jpg">
+<meta property="og:image" content="https://lhis-adire-vibes.vercel.app/og2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -64,7 +64,7 @@ nav a:hover{background:var(--t3)}
 .cd div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px 14px;min-width:70px;font-variant-numeric:tabular-nums}
 .cd div:nth-child(1) b{color:var(--d1)}.cd div:nth-child(2) b{color:var(--d2)}.cd div:nth-child(3) b{color:var(--d4)}.cd div:nth-child(4) b{color:var(--d5)}
 .cd b{display:block;font:800 28px var(--fd)}.cd span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
-#dt{font-size:14px;color:var(--mut)}
+#dt{align-self:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:7px 14px;font-size:15px;font-weight:800;color:var(--ink);box-shadow:0 3px 0 rgba(31,42,92,.08)}#dt:empty{display:none}
 .hr{flex:0 1 330px;background:var(--surf);border:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(31,42,92,.4);border-radius:24px;overflow:hidden;width:100%}
 .strip{height:14px;background:radial-gradient(circle,#fff 2px,transparent 2.6px) 0 0/12px 14px,linear-gradient(90deg,var(--d1) 0 16.6%,var(--d2) 0 33.3%,var(--d3) 0 50%,var(--d4) 0 66.6%,var(--d5) 0 83.3%,var(--d6) 0)}
 .hr .in{padding:20px 22px 22px;display:flex;flex-direction:column;gap:12px}
@@ -186,95 +186,85 @@ input,select{font:inherit;padding:9px 12px;border-radius:12px;border:1.5px solid
 <symbol id="m-dia" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M20 3L37 20 20 37 3 20Z"/><path d="M20 12L28 20 20 28 12 20Z"/></g></symbol>
 </defs></svg>
 
-<nav><div class="w"><b><svg class="ic"><use href="#m-ring"/></svg>Àdìrè Vibes</b><div class="links"><a href="#adults">Grown-ups</a><a href="#little">Little Stars</a><a href="#teens">Teens</a><a href="#plan">The Plan</a><a href="#chart">Budget Chart</a><a href="#wall">Wall of Stars</a></div></div></nav>
+<nav><div class="w"><b><svg class="ic"><use href="#m-ring"/></svg><span id="navt">Àdìrè Vibes</span></b><div class="links"><a href="#adults" data-t="lbl_adults"></a><a href="#little" data-t="lbl_kids"></a><a href="#teens" data-t="lbl_teens"></a><a href="#plan" data-t="nav_plan"></a><a href="#chart" data-t="nav_chart"></a><a href="#wall" data-t="nav_wall"></a></div></div></nav>
 <aside class="rail" aria-label="Sections">
 <a href="#top" class="c0" aria-label="Top"><svg class="ic"><use href="#m-dia"/></svg><span>Top</span></a>
-<a href="#adults" class="c4" aria-label="Grown-ups"><svg class="ic"><use href="#m-wave"/></svg><span>Grown-ups</span></a>
-<a href="#little" class="c2" aria-label="Little Stars"><svg class="ic"><use href="#m-cross"/></svg><span>Little Stars</span></a>
-<a href="#teens" class="den" aria-label="Teens"><svg class="ic"><use href="#m-zig"/></svg><span>Teens</span></a>
-<a href="#plan" class="c1" aria-label="The Plan"><svg class="ic"><use href="#m-ring"/></svg><span>The Plan</span></a>
-<a href="#chart" class="c0" aria-label="Budget Chart"><svg class="ic"><use href="#m-dots"/></svg><span>Budget Chart</span></a>
-<a href="#wall" class="c3" aria-label="Wall of Stars"><svg class="ic"><use href="#m-star"/></svg><span>Wall of Stars</span></a>
+<a href="#adults" class="c4"><svg class="ic"><use href="#m-wave"/></svg><span data-t="lbl_adults"></span></a>
+<a href="#little" class="c2"><svg class="ic"><use href="#m-cross"/></svg><span data-t="lbl_kids"></span></a>
+<a href="#teens" class="den"><svg class="ic"><use href="#m-zig"/></svg><span data-t="lbl_teens"></span></a>
+<a href="#plan" class="c1"><svg class="ic"><use href="#m-ring"/></svg><span data-t="nav_plan"></span></a>
+<a href="#chart" class="c0"><svg class="ic"><use href="#m-dots"/></svg><span data-t="nav_chart"></span></a>
+<a href="#wall" class="c3"><svg class="ic"><use href="#m-star"/></svg><span data-t="nav_wall"></span></a>
 </aside>
 
 <div class="w">
 <header class="hero" id="top">
 <i class="disc a"></i><i class="disc b"></i>
 <div class="hl">
-<div class="kick">LagosHoms Ilupeju Estate · End of Year Thanksgiving Party</div>
+<div class="kick" data-t="hero_kick"></div>
 <h1><span id="ttl">Àdìrè Vibes</span></h1>
 <p class="tag" id="tag">Good Vibes, Great Company &amp; Unforgettable Memories</p>
-<p class="say">Grown-ups, come dressed up in your best Adire. Be fashionable, get creative and have fun with it.</p>
+<p class="say" data-t="hero_say"></p>
 <div class="cd" id="cd"></div><div id="dt"></div>
 </div>
 <div class="hr"><div class="strip"></div><div class="in">
-<div class="kick">Save the date</div>
-<div class="d">19 December 2026</div>
-<div class="it"><b>Grown-ups</b><span>5pm till mama calls</span></div>
-<div class="it"><b>Little Stars</b><span>12 noon to 5pm</span></div>
-<div class="it"><b>Teens</b><span>4pm to 8pm</span></div>
-<div class="it"><b>Venue</b><span>Recreation Center</span></div>
-<div class="rsvp"><span style="font-weight:700">RSVP</span><code id="ph">+234 809 466 1043</code><button class="btn gold sm" id="cp">Copy</button></div>
+<div class="kick" data-t="save_kick"></div>
+<div class="d" data-t="party_date"></div>
+<div class="it"><b data-t="lbl_adults"></b><span data-t="time_adults"></span></div>
+<div class="it"><b data-t="lbl_kids"></b><span data-t="time_kids"></span></div>
+<div class="it"><b data-t="lbl_teens"></b><span data-t="time_teens"></span></div>
+<div class="it"><b data-t="venue_label"></b><span data-t="venue"></span></div>
+<div class="rsvp"><span style="font-weight:700" data-t="rsvp_label"></span><code id="ph" data-t="phone"></code><button class="btn gold sm" id="cp" data-t="copy_btn"></button></div>
 </div></div>
 </header>
 
 <section id="who" style="padding-top:28px"><div class="pickgrid">
-<a class="pk c4" href="#adults"><span class="bd"><svg class="ic"><use href="#m-wave"/></svg></span><span><b>Grown-ups</b><small>Àdìrè Vibes · 5pm till mama calls</small></span></a>
-<a class="pk c2" href="#little"><span class="bd"><svg class="ic"><use href="#m-cross"/></svg></span><span><b>Little Stars</b><small>Bouncing castles · 12 noon to 5pm</small></span></a>
-<a class="pk den" href="#teens"><span class="bd"><svg class="ic"><use href="#m-zig"/></svg></span><span><b>Teens</b><small>Theme: Denim · 4pm to 8pm</small></span></a>
+<a class="pk c4" href="#adults"><span class="bd"><svg class="ic"><use href="#m-wave"/></svg></span><span><b data-t="lbl_adults"></b><small data-t="pick_adults"></small></span></a>
+<a class="pk c2" href="#little"><span class="bd"><svg class="ic"><use href="#m-cross"/></svg></span><span><b data-t="lbl_kids"></b><small data-t="pick_kids"></small></span></a>
+<a class="pk den" href="#teens"><span class="bd"><svg class="ic"><use href="#m-zig"/></svg></span><span><b data-t="lbl_teens"></b><small data-t="pick_teens"></small></span></a>
 </div></section>
 
 <section id="adults"><div class="panel c4"><div class="pn"><div>
-<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-wave"/></svg></span><div><div class="kick">The grown-ups' party · Àdìrè Vibes</div><h2>Grown-ups</h2></div></div>
-<div class="when"><div><b>5pm till mama calls</b><small>Grown-ups party</small></div><div><b>Recreation Center</b><small>19 December 2026</small></div><div><b id="ab">₦0</b><small id="as">Grown-ups only lines</small></div></div>
-<p class="lead" style="margin-top:0">Come in your best Adire. Be fashionable, get creative and have fun with it. Tap a card to wake it up.</p>
+<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-wave"/></svg></span><div><div class="kick" data-t="adults_kick"></div><h2 data-t="lbl_adults"></h2></div></div>
+<div class="when"><div><b data-t="time_adults"></b><small data-t="adults_when_small"></small></div><div><b data-t="venue"></b><small data-t="party_date"></small></div><div><b id="ab">₦0</b><small id="as"></small></div></div>
+<p class="lead" style="margin-top:0" data-t="adults_lead"></p>
 <div class="acts" id="acts-a"></div>
-<div class="kick" style="margin:24px 0 4px">Budget lines just for grown-ups</div>
-<div class="lines" id="al"></div>
-<p style="color:var(--mut);font-size:14px;margin:0">Shared lines like food, drinks and rentals are in The Plan below.</p>
 </div><div class="flb" id="fl-adults"></div></div></div></section>
 
 <section id="little"><div class="panel c2"><div class="pn"><div>
-<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-cross"/></svg></span><div><div class="kick">The children's party</div><h2>Little Stars Zone</h2></div></div>
-<div class="when"><div><b>12 noon to 5pm</b><small>Little Stars party</small></div><div><b>Recreation Center</b><small>19 December 2026</small></div><div><b id="kb">₦0</b><small id="ks">Children's budget</small></div></div>
-<p class="lead" style="margin-top:0">Tap a card to wake it up.</p>
+<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-cross"/></svg></span><div><div class="kick" data-t="kids_kick"></div><h2 data-t="kids_h2"></h2></div></div>
+<div class="when"><div><b data-t="time_kids"></b><small data-t="kids_when_small"></small></div><div><b data-t="venue"></b><small data-t="party_date"></small></div><div><b id="kb">₦0</b><small id="ks"></small></div></div>
+<p class="lead" style="margin-top:0" data-t="kids_lead"></p>
 <div class="acts" id="acts"></div>
-<div class="kick" style="margin:24px 0 4px">Budget lines just for the children</div>
-<div class="lines" id="kl"></div>
-<div class="game"><h3>Adire Match</h3><p class="lead" style="margin:4px 0">Find the four matching pairs in as few tries as you can.</p>
-<div class="cards" id="cards"></div><div class="row"><span id="mv" style="font-weight:700">Tries: 0</span><button class="btn sm" id="rs">Shuffle again</button></div></div>
+<div class="game"><h3 data-t="game_h3"></h3><p class="lead" style="margin:4px 0" data-t="game_lead"></p>
+<div class="cards" id="cards"></div><div class="row"><span id="mv" style="font-weight:700">Tries: 0</span><button class="btn sm" id="rs" data-t="shuffle_btn"></button></div></div>
 </div><div class="flb" id="fl-kids"></div></div></div></section>
 
 <section id="teens"><div class="panel den"><div class="pn"><div>
-<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-zig"/></svg></span><div><div class="kick">The teenagers' party</div><h2>Denim Zone</h2></div></div>
-<div class="when"><div><b>4pm to 8pm</b><small>Teen party</small></div><div><b>19 December 2026</b><small>Come in your best denim</small></div><div><b id="tb">₦0</b><small id="ts">Teen only lines</small></div></div>
-<p style="margin:0 0 16px"><span class="patch">Theme: Denim</span></p>
-<p class="lead" style="margin-top:0">Come in your best denim. Tap a card to wake it up.</p>
+<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-zig"/></svg></span><div><div class="kick" data-t="teens_kick"></div><h2 data-t="teens_h2"></h2></div></div>
+<div class="when"><div><b data-t="time_teens"></b><small data-t="teens_when_small"></small></div><div><b data-t="party_date"></b><small data-t="teens_when2"></small></div><div><b id="tb">₦0</b><small id="ts"></small></div></div>
+<p style="margin:0 0 16px"><span class="patch" data-t="teens_patch"></span></p>
+<p class="lead" style="margin-top:0" data-t="teens_lead"></p>
 <div class="acts" id="acts-t"></div>
-<div class="game"><h3>Denim fit check</h3><p class="lead" style="margin:4px 0 14px">Tap the pieces you plan to wear.</p>
-<div class="acts" id="fit"></div><p id="fitmsg" style="font:800 18px var(--fd);margin:14px 0 0">Tap the pieces you plan to wear.</p></div>
-<div class="kick" style="margin:24px 0 4px">Budget lines just for teens</div>
-<div class="lines" id="tl"></div>
-<p style="color:var(--mut);font-size:14px;margin:0">Shared lines like drinks and decoration are in The Plan below.</p>
 </div><div class="flb" id="fl-teens"></div></div></div></section>
 
-<section id="plan"><div class="sh c1"><span class="bd"><svg class="ic"><use href="#m-ring"/></svg></span><h2>Party Power Meter</h2></div><p class="lead">Every naira raised fills the meter. Tap any tile to see the budget and the vendor quotes for that part of the party.</p>
-<div class="meter" role="progressbar" aria-label="Funds raised"><i id="mt"></i></div><div class="lvl" id="lvl">Just getting started</div>
+<section id="plan"><div class="sh c1"><span class="bd"><svg class="ic"><use href="#m-ring"/></svg></span><h2 data-t="plan_h2"></h2></div><p class="lead" data-t="plan_lead"></p>
+<div class="meter" role="progressbar" aria-label="Funds raised"><i id="mt"></i></div><div class="lvl" id="lvl"></div>
 <div class="stats" id="stats"></div>
 <div class="filters" id="filters" role="group" aria-label="Filter sections"></div>
-<div class="grid" id="tiles"><div class="empty">Budget lines load here. Each one gets a tile, a budget bar and its vendor quotes.</div></div>
-<div class="adm" id="admSec" hidden><b>Add a section</b><br><input id="sn" placeholder="Name (e.g. Photo Booth)"><input id="se" placeholder="Emoji" style="width:80px"><input id="sb" type="number" inputmode="numeric" placeholder="Budget ₦"><select id="sg"><option value="both">Everyone</option><option value="adults">Grown-ups</option><option value="kids">Little Stars</option><option value="teens">Teens</option></select><label><input type="checkbox" id="sp"> Pending</label> <button class="btn sm" id="addSec">Add</button></div></section>
+<div class="grid" id="tiles"></div>
+<div class="adm" id="admSec" hidden><b>Add a section</b><br><input id="sn" placeholder="Name (e.g. Photo Booth)"><input id="se" placeholder="Emoji" style="width:80px"><input id="sb" type="number" inputmode="numeric" placeholder="Budget ₦"><select id="sg"><option value="both">Everyone</option><option value="adults">Adults</option><option value="kids">Little Stars</option><option value="teens">Teens</option></select><label><input type="checkbox" id="sp"> Pending</label> <button class="btn sm" id="addSec">Add</button></div></section>
 
-<section id="chart"><div class="panel c0"><div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-dots"/></svg></span><h2>Where the money goes</h2></div><p class="lead">Tap a slice or a name to open that section.</p>
+<section id="chart"><div class="panel c0"><div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-dots"/></svg></span><h2 data-t="chart_h2"></h2></div><p class="lead" data-t="chart_lead"></p>
 <div class="chart"><svg id="dn" viewBox="0 0 220 220" width="260" height="260" role="img" aria-label="Budget split by section"></svg><div class="leg" id="leg"></div></div></div></section>
 
-<section id="wall"><div class="panel c3"><div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-star"/></svg></span><h2>Wall of Stars</h2><span class="twk" aria-hidden="true"><svg class="st" style="color:var(--d3)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d4)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d2)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d5)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d1)"><use href="#m-star"/></svg></span></div><p class="lead">The neighbours who made this happen. Thank you!</p><div class="donors" id="donors"><div class="empty">The first star goes here.</div></div>
+<section id="wall"><div class="panel c3"><div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-star"/></svg></span><h2 data-t="wall_h2"></h2><span class="twk" aria-hidden="true"><svg class="st" style="color:var(--d3)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d4)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d2)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d5)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d1)"><use href="#m-star"/></svg></span></div><p class="lead" data-t="wall_lead"></p><div class="donors" id="donors"></div>
 <div class="adm" id="admDon" hidden><b>Record a donation</b><br><input id="dnn" placeholder="Donor name"><input id="dna" type="number" inputmode="numeric" placeholder="Amount ₦"><input id="dnf" type="file" accept="image/*,application/pdf"><button class="btn sm" id="addDon">Save donation</button><div id="dmsg" style="font-size:14px;margin-top:6px"></div></div></div></section>
 
 <div class="adm" id="admSet" hidden style="margin-top:40px"><b>Party settings</b><br><input id="cT" placeholder="Party title"><input id="cG" placeholder="Teaser line" style="width:320px"><input id="cD" type="datetime-local"><button class="btn sm" id="saveCfg">Save</button></div>
 </div>
 
-<footer><div class="ms"><span class="c0" style="color:var(--d)"><svg class="ic"><use href="#m-ring"/></svg></span><span class="c1" style="color:var(--d)"><svg class="ic"><use href="#m-cross"/></svg></span><span class="c2" style="color:var(--d)"><svg class="ic"><use href="#m-dots"/></svg></span><span class="c3" style="color:var(--d)"><svg class="ic"><use href="#m-wave"/></svg></span><span class="c4" style="color:var(--d)"><svg class="ic"><use href="#m-dia"/></svg></span></div><b>LagosHoms Ilupeju Estate</b><span>End of Year Thanksgiving Party · 19 December 2026 · Recreation Center</span></footer>
+<footer><div class="ms"><span class="c0" style="color:var(--d)"><svg class="ic"><use href="#m-ring"/></svg></span><span class="c1" style="color:var(--d)"><svg class="ic"><use href="#m-cross"/></svg></span><span class="c2" style="color:var(--d)"><svg class="ic"><use href="#m-dots"/></svg></span><span class="c3" style="color:var(--d)"><svg class="ic"><use href="#m-wave"/></svg></span><span class="c4" style="color:var(--d)"><svg class="ic"><use href="#m-dia"/></svg></span></div><b data-t="foot_b"></b><span data-t="foot_span"></span></footer>
 
 <div class="fbar"><button class="btn gold" id="edit" hidden>Edit mode</button></div>
 <div class="modal" id="mod"><div class="box" id="box"></div></div>
@@ -283,9 +273,12 @@ input,select{font:inherit;padding:9px 12px;border-radius:12px;border:1.5px solid
 <script>
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let TXT={"lbl_all": "All", "lbl_adults": "Adults", "lbl_kids": "Little Stars", "lbl_teens": "Teens", "lbl_both": "Everyone", "nav_plan": "The Plan", "nav_chart": "Budget Chart", "nav_wall": "Wall of Stars", "hero_kick": "LagosHoms Ilupeju Estate · End of Year Thanksgiving Party", "hero_say": "Adults, come dressed up in your best Adire. Be fashionable, get creative and have fun with it.", "cd_note": "Counting down to the Little Stars start", "cd_live": "The party is on. Come through!", "cd_none": "Countdown starts when the time is confirmed", "save_kick": "Save the date", "party_date": "19 December 2026", "time_adults": "5pm till mama calls", "time_kids": "12 noon to 5pm", "time_teens": "4pm to 8pm", "venue_label": "Venue", "venue": "Recreation Center", "rsvp_label": "RSVP", "phone": "+234 809 466 1043", "copy_btn": "Copy", "copy_done": "Number copied", "pick_adults": "Àdìrè Vibes · 5pm till mama calls", "pick_kids": "Bouncing castles · 12 noon to 5pm", "pick_teens": "Theme: Denim · 4pm to 8pm", "adults_kick": "The adults' party · Àdìrè Vibes", "adults_when_small": "Adults party", "adults_box_label": "Adults only lines", "adults_lead": "Come in your best Adire. Be fashionable, get creative and have fun with it. Tap a card to wake it up.", "kids_kick": "The children's party", "kids_h2": "Little Stars Zone", "kids_when_small": "Little Stars party", "kids_box_label": "Children only lines", "kids_lead": "Tap a card to wake it up.", "game_h3": "Adire Match", "game_lead": "Find the four matching pairs in as few tries as you can.", "shuffle_btn": "Shuffle again", "teens_kick": "The teenagers' party", "teens_h2": "Denim Zone", "teens_when_small": "Teen party", "teens_when2": "Come in your best denim", "teens_box_label": "Teen only lines", "teens_patch": "Theme: Denim", "teens_lead": "Come in your best denim. Tap a card to wake it up.", "plan_h2": "Party Power Meter", "plan_lead": "Every naira raised fills the meter. Tap any tile to see the budget and the vendor quotes for that part of the party.", "lvl_0": "Just getting started", "lvl_25": "Warming up", "lvl_50": "Halfway and rising", "lvl_75": "Almost there!", "lvl_100": "Fully funded. Let us party!", "stat_target": "Target so far", "stat_raised": "Raised ({pct}% of target)", "stat_vendors": "Vendors chosen", "stat_left": "Still to raise", "stat_above": "Above target", "stat_paid": "Paid to vendors", "pending": "Pending", "no_quotes": "No quotes yet", "chart_h2": "Where the money goes", "chart_lead": "Tap a slice or a name to open that section.", "chart_pending_note": "Pending lines join the chart once they have a figure.", "wall_h2": "Wall of Stars", "wall_lead": "The neighbours who made this happen. Thank you!", "wall_empty": "The first star goes here.", "donor_pct": "{pct}% of target", "foot_b": "LagosHoms Ilupeju Estate", "foot_span": "End of Year Thanksgiving Party · 19 December 2026 · Recreation Center"},ACT={"adults": [["🍛", "Food", "Come hungry"], ["🍹", "Drinks", "Plenty to sip"], ["🎤", "Karaoke", "Take the mic"], ["🎲", "Games", "Play to win"], ["🎶", "Music", "Dance till mama calls"]], "kids": [["🏰", "Bouncing castles", "Jump till you drop"], ["🎲", "Games", "Prizes for the winners"], ["🎶", "Music", "Dance moves welcome"], ["🦸", "Characters", "Fun faces walking around"], ["🍽️", "Food and drinks", "Snacks and sips"], ["🎁", "A gift for every child", "120 kids, one gift each"]], "teens": [["🍔", "Food", "Eat up"], ["🥤", "Drinks", "Stay hydrated"], ["🎮", "Games and more", "Play, laugh, repeat"], ["👖", "Denim", "Wear your best"]]};
+const tx=(k,v)=>String(TXT[k]??"").replace(/\{(\w+)\}/g,(m,x)=>v&&x in v?v[x]:m);
+function applyText(){document.querySelectorAll("[data-t]").forEach(e=>{const t=tx(e.dataset.t);if(e.textContent!==t)e.textContent=t})}
 const N=n=>"₦"+Math.round(n||0).toLocaleString("en-NG");
 const COL=["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)","var(--c6)","var(--c7)","var(--c8)","var(--c9)","var(--c10)","var(--c11)","var(--c12)"];
-const GL={both:"Everyone",adults:"Grown-ups",kids:"Little Stars",teens:"Teens"};
+const GL=new Proxy({},{get:(_,k)=>TXT["lbl_"+k]||TXT.lbl_both});
 let db,assets,cfg={},flyers={},secs=[],dons=[],recs={},edit=false,canEdit=false,openId=null,flt="all",arm=null;
 const total=()=>secs.reduce((a,s)=>a+(+s.budget||0),0);
 const raised=()=>dons.reduce((a,d)=>a+(+d.amount||0),0);
@@ -295,34 +288,32 @@ const grp=g=>secs.filter(s=>(s.group||"both")===g);
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2600)}
 function sure(key,msg){if(arm===key){arm=null;return true}arm=key;toast(msg||"Tap again to confirm");clearTimeout(sure.t);sure.t=setTimeout(()=>arm=null,3000);return false}
 function boom(x,y){const g=["○","✕","●","◇","✦"],c=["#2b3a82","#dfa22b","#2f8f8a","#d56a52","#8a3f6e"];for(let i=0;i<14;i++){const d=document.createElement("div");d.className="cf";d.textContent=g[i%5];d.style.left=x+"px";d.style.top=y+"px";d.style.color=c[i%5];d.style.setProperty("--x",(Math.random()*240-120)+"px");d.style.setProperty("--y",(Math.random()*-200-20)+"px");document.body.appendChild(d);setTimeout(()=>d.remove(),1300)}}
-function tick(){const el=$("cd");if(!cfg.date){el.innerHTML="";$("dt").textContent="Countdown starts when the time is confirmed";return}
+function tick(){const el=$("cd");if(!cfg.date){el.innerHTML="";$("dt").textContent=tx("cd_none");return}
 const t=new Date(cfg.date)-Date.now(),v=Math.max(0,t);
 el.innerHTML=[["Days",v/864e5],["Hours",v/36e5%24],["Mins",v/6e4%60],["Secs",v/1e3%60]].map(([l,n])=>`<div><b>${Math.floor(n)}</b><span>${l}</span></div>`).join("");
-$("dt").textContent=t>0?"Counting down to the Little Stars start":"The party is on. Come through!"}
+$("dt").textContent=t>0?tx("cd_note"):tx("cd_live")}
 setInterval(tick,1000);
 const flyBox=(k,label)=>{const id=flyers[k];return `${id?`<button class="flimg" data-fly="${k}" aria-label="Enlarge the ${label} flyer"><img src="${esc(id)}" alt="${label} party flyer" loading="lazy"></button>`:`<div class="flph">The ${label} flyer is coming soon.</div>`}${edit?`<label class="up">${id?"Replace":"Upload"} flyer<input type="file" accept="image/*" data-flyfile="${k}" hidden></label>`:""}`};
-function lines(k,id){const L=grp(k);$(id).innerHTML=L.map(s=>`<button class="ln" data-id="${esc(s.id)}"><span>${esc(s.emoji||"🎁")} ${esc(s.name)}</span><b>${s.pending&&!s.budget?"Pending":N(s.budget)}</b></button>`).join("")||`<div class="empty" style="grid-column:auto">No lines only for this group yet.</div>`}
 function render(){
-$("ttl").textContent=cfg.title||"Àdìrè Vibes";if(cfg.tagline)$("tag").textContent=cfg.tagline;document.title=cfg.title||"Àdìrè Vibes";tick();
+applyText();if(!render.a){render.a=1;mkActs("acts-a",ACT.adults,["c0","c1","c3","c2","c4"]);mkActs("acts",ACT.kids,["c0","c1","c3","c4","c5","c2"]);mkActs("acts-t",ACT.teens,["den"])}
+$("navt").textContent=cfg.title||"Àdìrè Vibes";$("ttl").textContent=cfg.title||"Àdìrè Vibes";if(cfg.tagline)$("tag").textContent=cfg.tagline;document.title=cfg.title||"Àdìrè Vibes";tick();
 const T=total(),R=raised(),pc=T?Math.min(100,R/T*100):0;
 $("mt").style.width=pc+"%";
-$("lvl").textContent=pc>=100?"Fully funded. Let us party!":pc>=75?"Almost there!":pc>=50?"Halfway and rising":pc>=25?"Warming up":"Just getting started";
+$("lvl").textContent=tx(pc>=100?"lvl_100":pc>=75?"lvl_75":pc>=50?"lvl_50":pc>=25?"lvl_25":"lvl_0");
 const S=secs.reduce((a,s)=>a+spent(s),0),P=secs.filter(s=>s.pending).length,PD=secs.reduce((a,s)=>a+paid(s),0);
-$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>Target so far</small></div><div class="stat"><b>${N(R)}</b><small>Raised (${pc.toFixed(0)}% of target)</small></div><div class="stat"><b>${N(S)}</b><small>Vendors chosen</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${R>=T?"Above target":"Still to raise"}</small></div><div class="stat"><b>${N(PD)}</b><small>Paid to vendors</small></div>`;
-$("filters").innerHTML=[["all","All"],["adults","Grown-ups"],["kids","Little Stars"],["teens","Teens"],["both","Everyone"]].map(([k,l])=>`<button class="fl" data-fl="${k}" aria-pressed="${flt===k}">${l}</button>`).join("");
+$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>${esc(tx("stat_target"))}</small></div><div class="stat"><b>${N(R)}</b><small>${esc(tx("stat_raised",{pct:pc.toFixed(0)}))}</small></div><div class="stat"><b>${N(S)}</b><small>${esc(tx("stat_vendors"))}</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${esc(tx(R>=T?"stat_above":"stat_left"))}</small></div><div class="stat"><b>${N(PD)}</b><small>${esc(tx("stat_paid"))}</small></div>`;
+$("filters").innerHTML=["all","adults","kids","teens","both"].map(k=>`<button class="fl" data-fl="${k}" aria-pressed="${flt===k}">${esc(tx("lbl_"+k))}</button>`).join("");
 const vis=secs.filter(s=>flt==="all"||(s.group||"both")===flt);
 $("tiles").innerHTML=vis.map(s=>{const sp=spent(s),p=s.budget?Math.min(100,sp/s.budget*100):0,pd=s.pending&&!s.budget;
-return`<button class="tile c${secs.indexOf(s)%6} ${pd?"pd":""}" data-id="${esc(s.id)}"><span class="em">${esc(s.emoji||"🎁")}</span><span class="tg">${GL[s.group]||GL.both}</span><h3>${esc(s.name)}</h3>${pd?`<span class="pend">Pending</span>`:`<span class="amt">${N(s.budget)}</span><span class="meter"><i style="width:${p}%;transition:none"></i></span>`}${paid(s)?`<small style="position:relative;z-index:1;font-weight:700">Paid ${N(paid(s))} · Left ${N(Math.max(0,basis(s)-paid(s)))}</small>`:""}<small style="color:var(--mut);position:relative;z-index:1">${(s.quotes||[]).length?(s.quotes.length+" quote(s)"):"No quotes yet"}</small></button>`}).join("")||`<div class="empty">Nothing here yet.</div>`;
-[["adults","ab","as","Grown-ups only lines"],["kids","kb","ks","Children only lines"],["teens","tb","ts","Teen only lines"]].forEach(([g,b,l,lab])=>{const x=grp(g).reduce((a,s)=>a+(+s.budget||0),0);$(b).textContent=N(x);$(l).textContent=T&&x?`${lab} (${(x/T*100).toFixed(0)}% of total)`:lab});
-lines("adults","al");lines("kids","kl");lines("teens","tl");
-$("fl-adults").innerHTML=flyBox("adults","grown-ups");$("fl-kids").innerHTML=flyBox("kids","children");$("fl-teens").innerHTML=flyBox("teens","teens");
+return`<button class="tile c${secs.indexOf(s)%6} ${pd?"pd":""}" data-id="${esc(s.id)}"><span class="em">${esc(s.emoji||"🎁")}</span><span class="tg">${GL[s.group]||GL.both}</span><h3>${esc(s.name)}</h3>${pd?`<span class="pend">${esc(tx("pending"))}</span>`:`<span class="amt">${N(s.budget)}</span><span class="meter"><i style="width:${p}%;transition:none"></i></span>`}${paid(s)?`<small style="position:relative;z-index:1;font-weight:700">Paid ${N(paid(s))} · Left ${N(Math.max(0,basis(s)-paid(s)))}</small>`:""}<small style="color:var(--mut);position:relative;z-index:1">${(s.quotes||[]).length?(s.quotes.length+" quote(s)"):tx("no_quotes")}</small></button>`}).join("")||`<div class="empty">Nothing here yet.</div>`;
+[["adults","ab","as","adults_box_label"],["kids","kb","ks","kids_box_label"],["teens","tb","ts","teens_box_label"]].forEach(([g,b,l,lk])=>{const lab=tx(lk);const x=grp(g).reduce((a,s)=>a+(+s.budget||0),0);$(b).textContent=N(x);$(l).textContent=T&&x?`${lab} (${(x/T*100).toFixed(0)}% of total)`:lab});
+$("fl-adults").innerHTML=flyBox("adults","adults");$("fl-kids").innerHTML=flyBox("kids","children");$("fl-teens").innerHTML=flyBox("teens","teens");
 let a=-Math.PI/2,paths="";const r=100,c=110,live=secs.filter(s=>s.budget>0);
 live.forEach((s,i)=>{const f=s.budget/T,b=a+f*2*Math.PI*0.9999,L=f>.5?1:0;
 paths+=`<path data-id="${esc(s.id)}" style="fill:${COL[i%12]}" d="M${c+r*Math.cos(a)} ${c+r*Math.sin(a)} A${r} ${r} 0 ${L} 1 ${c+r*Math.cos(b)} ${c+r*Math.sin(b)} L${c+55*Math.cos(b)} ${c+55*Math.sin(b)} A55 55 0 ${L} 0 ${c+55*Math.cos(a)} ${c+55*Math.sin(a)}Z"/>`;a=b});
 $("dn").innerHTML=(paths||`<circle cx="110" cy="110" r="78" fill="none" stroke="var(--line)" stroke-width="45"/>`)+`<text x="110" y="106" text-anchor="middle" style="fill:var(--mut)" font-size="13">Total</text><text x="110" y="126" text-anchor="middle" style="fill:var(--ink)" font-size="14" font-weight="700">${N(T)}</text>`;
-$("leg").innerHTML=live.map((s,i)=>`<button data-id="${esc(s.id)}"><i style="background:${COL[i%12]}"></i><span>${esc(s.name)}: ${N(s.budget)} (${(s.budget/T*100).toFixed(0)}%)</span></button>`).join("")+(secs.some(s=>!s.budget)?`<p style="color:var(--mut);font-size:14px;margin:10px 0 0">Pending lines join the chart once they have a figure.</p>`:"");
-const topAmt=dons.reduce((m,d)=>Math.max(m,d.amount||0),0),topN=dons.filter(d=>d.amount===topAmt).length;
-$("donors").innerHTML=dons.map((d,i)=>`<div class="dn" style="animation-delay:${i*.05}s">${topAmt>0&&d.amount===topAmt&&topN<dons.length?`<span class="top"><svg class="st"><use href="#m-star"/></svg>Top star</span>`:""}<div class="nm"><svg class="st"><use href="#m-star"/></svg><b>${esc(d.name)}</b></div><span>${N(d.amount)}${T?` · ${(d.amount/T*100).toFixed(1)}% of target`:""}</span>${canEdit&&recs[d.id]?`<br><a href="/_blob/${esc(recs[d.id])}" target="_blank" rel="noopener" style="color:var(--d1);font-size:13px">View receipt</a>`:""}${edit?` <button class="btn sm ghost" data-deld="${esc(d.id)}">Remove</button>`:""}</div>`).join("")||`<div class="empty">The first star goes here.</div>`;
+$("leg").innerHTML=live.map((s,i)=>`<button data-id="${esc(s.id)}"><i style="background:${COL[i%12]}"></i><span>${esc(s.name)}: ${N(s.budget)} (${(s.budget/T*100).toFixed(0)}%)</span></button>`).join("")+(secs.some(s=>!s.budget)?`<p style="color:var(--mut);font-size:14px;margin:10px 0 0">${esc(tx("chart_pending_note"))}</p>`:"");
+$("donors").innerHTML=dons.map((d,i)=>`<div class="dn" style="animation-delay:${i*.05}s"><div class="nm"><svg class="st"><use href="#m-star"/></svg><b>${esc(d.name)}</b></div><span>${N(d.amount)}${T?` · ${esc(tx("donor_pct",{pct:(d.amount/T*100).toFixed(1)}))}`:""}</span>${canEdit&&recs[d.id]?`<br><a href="/_blob/${esc(recs[d.id])}" target="_blank" rel="noopener" style="color:var(--d1);font-size:13px">View receipt</a>`:""}${edit?` <button class="btn sm ghost" data-deld="${esc(d.id)}">Remove</button>`:""}</div>`).join("")||`<div class="empty">${esc(tx("wall_empty"))}</div>`;
 ["admSec","admDon","admSet"].forEach(k=>$(k).hidden=!edit);
 $("edit").textContent=edit?"Done editing":"Edit mode";
 if(openId)showSec(openId)}
@@ -335,7 +326,7 @@ ${(s.quotes||[]).map((q,i)=>`<div class="q ${q.pick?"pick":""}"><div><b>${esc(q.
 ${(s.payments||[]).map((p,i)=>`<div class="q"><div><b>${N(p.amt)}</b><br><small>${esc(p.note||"Payment")} · ${esc(p.date||"")}</small></div>${edit?`<button class="btn sm ghost" data-delp="${i}">Remove</button>`:""}</div>`).join("")||"<p class='lead' style='margin:4px 0'>No payments recorded yet.</p>"}
 ${bs&&pd>bs?`<p style="color:var(--d4);font-weight:700">Paid is more than the amount owed.</p>`:""}
 ${edit?`<div class="adm"><input id="pa" type="number" inputmode="numeric" placeholder="Paid ₦"><input id="pn" placeholder="Note (e.g. 50% deposit)"><button class="btn sm" id="addPay">Record payment</button></div>`:""}
-${edit?`<div class="adm"><input id="qv" placeholder="Vendor"><input id="qa" type="number" inputmode="numeric" placeholder="Quote ₦"><input id="qn" placeholder="Note"><button class="btn sm" id="addQ">Add quote</button><br><input id="eb" type="number" inputmode="numeric" value="${+s.budget||0}"><select id="eg">${[["both","Everyone"],["adults","Grown-ups"],["kids","Little Stars"],["teens","Teens"]].map(([v,l])=>`<option value="${v}" ${(s.group||"both")===v?"selected":""}>${l}</option>`).join("")}</select><label><input type="checkbox" id="ep" ${s.pending?"checked":""}> Pending</label> <button class="btn sm" id="saveB">Update budget</button> <button class="btn sm ghost" id="delS">Delete section</button></div>`:""}
+${edit?`<div class="adm"><input id="qv" placeholder="Vendor"><input id="qa" type="number" inputmode="numeric" placeholder="Quote ₦"><input id="qn" placeholder="Note"><button class="btn sm" id="addQ">Add quote</button><br><input id="eb" type="number" inputmode="numeric" value="${+s.budget||0}"><select id="eg">${[["both","Everyone"],["adults","Adults"],["kids","Little Stars"],["teens","Teens"]].map(([v,l])=>`<option value="${v}" ${(s.group||"both")===v?"selected":""}>${l}</option>`).join("")}</select><label><input type="checkbox" id="ep" ${s.pending?"checked":""}> Pending</label> <button class="btn sm" id="saveB">Update budget</button> <button class="btn sm ghost" id="delS">Delete section</button></div>`:""}
 <p style="text-align:center;margin:16px 0 0"><button class="btn" id="closeM">Close</button></p>`;$("mod").classList.add("on")}
 const ref=(c,id)=>db.collection(c).doc(id);
 const mut=async(s,f)=>{const q=[...(s.quotes||[])];f(q);await ref("sections",s.id).update({quotes:q})};
@@ -347,22 +338,16 @@ if(pk.length===2){tries++;$("mv").textContent="Tries: "+tries;lock=true;const[a,
 if(deck[a]===deck[b]){setTimeout(()=>{A.className="card ok";B.className="card ok";pk=[];lock=false;if([...$("cards").children].every(x=>x.classList.contains("ok"))){toast(`All matched in ${tries} tries!`);const r=$("cards").getBoundingClientRect();boom(r.left+r.width/2,r.top+r.height/2)}},350)}
 else setTimeout(()=>{A.classList.remove("up");B.classList.remove("up");pk=[];lock=false},800)}}
 const mkActs=(id,list,cls)=>{$(id).innerHTML=list.map(([e,t,d],i)=>`<button class="act ${cls[i%cls.length]}"><span class="em">${e}</span><b>${t}</b><small>${d}</small></button>`).join("")};
-mkActs("acts-a",[["🍛","Food","Come hungry"],["🍹","Drinks","Plenty to sip"],["🎤","Karaoke","Take the mic"],["🎲","Games","Play to win"],["🎶","Music","Dance till mama calls"]],["c0","c1","c3","c2","c4"]);
-mkActs("acts",[["🏰","Bouncing castles","Jump till you drop"],["🎲","Games","Prizes for the winners"],["🎶","Music","Dance moves welcome"],["🦸","Characters","Fun faces walking around"],["🍽️","Food and drinks","Snacks and sips"],["🎁","A gift for every child","120 kids, one gift each"]],["c0","c1","c3","c4","c5","c2"]);
-mkActs("acts-t",[["🍔","Food","Eat up"],["🥤","Drinks","Stay hydrated"],["🎮","Games and more","Play, laugh, repeat"],["👖","Denim","Wear your best"]],["den"]);
-const FIT=[["🧥","Jacket"],["👖","Jeans"],["🧢","Bucket hat"],["👟","Sneakers"],["🧷","Patches"]];let fit=new Set();
-function drawFit(){$("fit").innerHTML=FIT.map(([e,n],i)=>`<button class="act den${fit.has(i)?" on":""}" data-fit="${i}"><span class="em">${e}</span><b>${n}</b></button>`).join("");const k=fit.size;$("fitmsg").textContent=k===0?"Tap the pieces you plan to wear.":k<3?`${k} of 5 pieces. Keep going.`:k<5?`${k} of 5 pieces. Looking sharp!`:"Full denim. You are ready for the party!"}
-deal();drawFit();
+deal();
 document.addEventListener("click",async e=>{const t=e.target,g=x=>t.closest(x);
 if(g(".tile,.btn,.act,.fl,.leg button,.rail a,.ln,.pk"))boom(e.clientX,e.clientY);
 try{
 if(g(".fl")){flt=g(".fl").dataset.fl;render()}
 else if(g("[data-fly]")){const k=g("[data-fly]").dataset.fly;if(flyers[k]){openId=null;$("box").innerHTML=`<img src="${esc(flyers[k])}" alt="Party flyer" style="display:block;max-width:100%;max-height:76vh;width:auto;height:auto;margin:0 auto;border-radius:18px"><p style="text-align:center;margin:14px 0 0"><button class="btn" id="closeM">Close</button></p>`;$("mod").classList.add("on")}}
-else if(g("[data-fit]")){const i=+g("[data-fit]").dataset.fit;fit.has(i)?fit.delete(i):fit.add(i);drawFit();if(fit.size===5)boom(e.clientX,e.clientY)}
 else if(g(".act"))g(".act").classList.toggle("on");
 else if(g(".card"))flip(+g(".card").dataset.c);
 else if(t.id==="rs")deal();
-else if(t.id==="cp"){try{await navigator.clipboard.writeText("+2348094661043");toast("Number copied")}catch(x){const r=document.createRange();r.selectNodeContents($("ph"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Number selected, copy it")}}
+else if(t.id==="cp"){try{await navigator.clipboard.writeText("+"+tx("phone").replace(/\D/g,""));toast(tx("copy_done"))}catch(x){const r=document.createRange();r.selectNodeContents($("ph"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Number selected, copy it")}}
 else if(g("[data-pick]")){const s=secs.find(x=>x.id===openId),i=+g("[data-pick]").dataset.pick;await mut(s,q=>q[i].pick=!q[i].pick)}
 else if(g("[data-delq]")){const s=secs.find(x=>x.id===openId);await mut(s,q=>q.splice(+g("[data-delq]").dataset.delq,1))}
 else if(g("[data-delp]")){const s=secs.find(x=>x.id===openId),i=+g("[data-delp]").dataset.delp;if(sure("p"+openId+i,"Tap Remove again to delete this payment")){const p=[...(s.payments||[])];p.splice(i,1);await ref("sections",s.id).update({payments:p})}}
@@ -387,7 +372,7 @@ try{toast("Uploading flyer...");const r=await assets.upload(f);await db.collecti
 (async()=>{
 $("edit").hidden=!canEdit;
 render();
-try{const r=await fetch("data.json",{cache:"no-cache"});const d=await r.json();cfg=d.config||{};flyers=d.flyers||{};secs=(d.sections||[]).slice().sort((a,b)=>(a.ts||0)-(b.ts||0));dons=(d.donors||[]).slice().sort((a,b)=>(a.ts||0)-(b.ts||0));render()}catch(e){$("tiles").innerHTML=`<div class="empty">Could not load the party plan. Please refresh.</div>`}
+try{const r=await fetch("data.json",{cache:"no-cache"});const d=await r.json();cfg=d.config||{};flyers=d.flyers||{};TXT={...TXT,...(d.text||{})};ACT={...ACT,...(d.activities||{})};secs=(d.sections||[]).slice().sort((a,b)=>(a.ts||0)-(b.ts||0));dons=(d.donors||[]).slice().sort((a,b)=>(a.ts||0)-(b.ts||0));render()}catch(e){$("tiles").innerHTML=`<div class="empty">Could not load the party plan. Please refresh.</div>`}
 })();
 </script>
 </body>
