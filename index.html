@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Àdìrè Vibes | LagosHoms Ilupeju End of Year Thanksgiving</title>
+<meta name="description" content="19 December 2026. Good vibes, great company and unforgettable memories. The plan, the flyers and the budget.">
+<meta property="og:title" content="Àdìrè Vibes | LagosHoms Ilupeju End of Year Thanksgiving">
+<meta property="og:description" content="19 December 2026. Come in your best Adire.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: warm white page, hero with soft tie-dye discs, a three-card picker (grown-ups, little stars, teens), one tinted panel per party with its flyer on the side, then the budget plan, chart and wall. Colour comes from six muted Adire dyes plus a faded denim blue for the teens. */
+:root{--bg:#fbfaf7;--surf:#ffffff;--ink:#1f2a5c;--mut:#5d6488;--line:#e7e5df;
+--d1:#2b3a82;--d2:#2f8f8a;--d3:#dfa22b;--d4:#d56a52;--d5:#8a3f6e;--d6:#7d8f3f;
+--t1:#e5e9f8;--t2:#dcefec;--t3:#fbefd3;--t4:#fae1da;--t5:#f1dfeb;--t6:#e9eed6;
+--c1:#2b3a82;--c2:#dfa22b;--c3:#2f8f8a;--c4:#d56a52;--c5:#6f8fd8;--c6:#8a3f6e;--c7:#7d8f3f;--c8:#c9b27a;--c9:#a1b4e6;--c10:#f0c36c;--c11:#7fc4bf;--c12:#eba08f;
+--fd:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;--fb:"DM Sans",system-ui,sans-serif;color-scheme:light}
+*{box-sizing:border-box}html{scroll-behavior:smooth}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--fb);padding-block:0 90px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surf);z-index:30}
+.w{max-width:1040px;margin:0 auto}
+h1,h2,h3{font-family:var(--fd);margin:0;text-wrap:balance;line-height:1.05}
+h2{font-size:clamp(28px,5vw,40px);font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--mut);margin:8px 0 22px;max-width:62ch}
+.kick{font:700 12px var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--mut)}
+button{font:inherit;cursor:pointer;border:0;color:inherit;background:none}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible,label:focus-within{outline:3px solid var(--d1);outline-offset:2px}
+.ic{width:28px;height:28px;flex:none}
+.bd{width:54px;height:54px;border-radius:50%;background:var(--t,var(--t1));color:var(--d,var(--d1));display:grid;place-items:center;flex:none;transition:transform .5s}
+.sh:hover .bd{transform:rotate(180deg)}
+.sh{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surf);border-bottom:1px solid var(--line);margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)))}
+nav .w{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:8px max(16px,env(safe-area-inset-left,0px))}
+nav b{font:800 20px var(--fd);display:flex;align-items:center;gap:8px}nav b .ic{width:22px;height:22px;color:var(--d4)}
+nav .links{display:flex;gap:2px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px;padding:6px 12px;border-radius:99px}
+nav a:hover{background:var(--t3)}
+.rail{display:none}
+@media (min-width:1180px){.rail{display:flex;flex-direction:column;gap:12px;position:fixed;left:max(14px,env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%);z-index:25}
+.rail a{position:relative;width:46px;height:46px;border-radius:50%;background:var(--t);color:var(--d);display:grid;place-items:center;text-decoration:none;transition:transform .25s}
+.rail a:hover{transform:scale(1.18) rotate(-12deg)}
+.rail a span{position:absolute;left:56px;white-space:nowrap;background:var(--ink);color:#fff;font-size:13px;font-weight:500;padding:4px 12px;border-radius:99px;opacity:0;pointer-events:none;transition:opacity .2s}
+.rail a:hover span{opacity:1}}
+.hero{margin-top:20px;border-radius:32px;background:var(--surf);border:1px solid var(--line);position:relative;overflow:hidden;padding:clamp(24px,5vw,54px);display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.disc{position:absolute;border-radius:50%;pointer-events:none;opacity:.8}
+.disc.a{width:480px;height:480px;right:-130px;top:-170px;background:repeating-radial-gradient(circle,var(--d1) 0 12px,#fff 12px 19px,var(--d2) 19px 32px,#fff 32px 38px,var(--d3) 38px 50px,#fff 50px 56px,var(--d4) 56px 68px,#fff 68px 74px)}
+.disc.b{width:260px;height:260px;left:-90px;bottom:-110px;background:repeating-radial-gradient(circle,var(--d5) 0 9px,#fff 9px 14px,var(--d3) 14px 24px,#fff 24px 29px,var(--d2) 29px 38px,#fff 38px 43px)}
+@media (max-width:760px){.disc{opacity:.5}.disc.a{width:300px;height:300px;right:-190px;top:-190px}.disc.b{width:200px;height:200px;left:-110px;bottom:-110px}}
+.hero>*:not(.disc){position:relative;min-width:0}
+.hl{flex:1 1 380px;display:flex;flex-direction:column;gap:10px}
+.hero .kick{color:var(--d5)}
+.hl .kick{align-self:flex-start;background:#fff;color:var(--ink);padding:7px 14px;border-radius:16px;border:1px solid var(--line);letter-spacing:.12em;box-shadow:0 3px 0 rgba(31,42,92,.08)}
+.hero h1{font-size:clamp(54px,11vw,112px);font-weight:800;letter-spacing:-.04em;line-height:.95}
+.hero h1 span{text-decoration:underline wavy var(--d3);text-decoration-thickness:6px;text-underline-offset:12px}
+.hero .tag{font:600 clamp(18px,2.6vw,24px) var(--fd);margin:8px 0 0;max-width:24ch;color:var(--d1)}
+.hero .say{margin:0 0 6px;color:var(--mut);max-width:44ch}
+.cd{display:flex;gap:8px;flex-wrap:wrap}
+.cd div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px 14px;min-width:70px;font-variant-numeric:tabular-nums}
+.cd div:nth-child(1) b{color:var(--d1)}.cd div:nth-child(2) b{color:var(--d2)}.cd div:nth-child(3) b{color:var(--d4)}.cd div:nth-child(4) b{color:var(--d5)}
+.cd b{display:block;font:800 28px var(--fd)}.cd span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+#dt{font-size:14px;color:var(--mut)}
+.hr{flex:0 1 330px;background:var(--surf);border:1px solid var(--line);box-shadow:0 20px 40px -24px rgba(31,42,92,.4);border-radius:24px;overflow:hidden;width:100%}
+.strip{height:14px;background:radial-gradient(circle,#fff 2px,transparent 2.6px) 0 0/12px 14px,linear-gradient(90deg,var(--d1) 0 16.6%,var(--d2) 0 33.3%,var(--d3) 0 50%,var(--d4) 0 66.6%,var(--d5) 0 83.3%,var(--d6) 0)}
+.hr .in{padding:20px 22px 22px;display:flex;flex-direction:column;gap:12px}
+.hr .d{font:800 30px var(--fd);line-height:1}
+.hr .it{display:flex;gap:12px;align-items:baseline;justify-content:space-between;border-top:1px solid var(--line);padding-top:10px}
+.hr .it b{font-weight:700}.hr .it span{color:var(--mut);text-align:right}
+.rsvp{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.rsvp code{font:700 17px var(--fb);background:var(--t3);padding:7px 14px;border-radius:99px;user-select:all}
+.btn{background:var(--d1);color:#fff;font-weight:700;padding:10px 20px;border-radius:99px;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.12)}.btn.gold{background:var(--d3);color:#3a2800}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}.btn.sm{padding:5px 12px;font-size:13px}
+section{padding-block:56px 0}
+.panel{border-radius:30px;padding:clamp(20px,4vw,38px);background:var(--t);position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;right:-60px;top:-60px;width:210px;height:210px;border-radius:50%;pointer-events:none;opacity:.35;background:repeating-radial-gradient(circle,var(--d) 0 6px,transparent 6px 14px)}
+.panel>*{position:relative;z-index:1}
+.c0{--d:var(--d1);--t:var(--t1);--on:#fff}.c1{--d:var(--d2);--t:var(--t2);--on:#fff}.c2{--d:var(--d3);--t:var(--t3);--on:#3a2800}.c3{--d:var(--d4);--t:var(--t4);--on:#fff}.c4{--d:var(--d5);--t:var(--t5);--on:#fff}.c5{--d:var(--d6);--t:var(--t6);--on:#fff}
+.den{--d:#2e4d80;--t:#dbe6f3;--on:#fff}
+.panel.den::before{content:"";position:absolute;inset:10px;border:2px dashed rgba(46,77,128,.4);border-radius:22px;pointer-events:none;z-index:0}
+.pickgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.pk{display:flex;gap:14px;align-items:center;background:var(--t);border-radius:22px;padding:16px 18px;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s;min-width:0}
+.pk:hover{transform:translateY(-4px);box-shadow:0 16px 28px -16px var(--d)}
+.pk .bd{background:#fff}.pk b{font:800 19px var(--fd);display:block}.pk small{color:var(--mut)}
+.pn{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);gap:28px;align-items:start}
+@media (max-width:820px){.pn{grid-template-columns:minmax(0,1fr)}.flb{max-width:320px;margin-inline:auto;width:100%}}
+.flb{min-width:0}
+.flimg{display:block;width:100%;border-radius:20px;overflow:hidden;box-shadow:0 18px 36px -20px rgba(31,42,92,.6);transition:transform .25s}
+.flimg:hover{transform:rotate(-1.5deg) scale(1.02)}.flimg img{display:block;width:100%;height:auto}
+.flph{aspect-ratio:9/16;border:2px dashed rgba(31,42,92,.3);border-radius:20px;display:grid;place-items:center;text-align:center;padding:16px;color:var(--mut);background:rgba(255,255,255,.6)}
+.up{display:inline-block;margin-top:10px;cursor:pointer;background:#fff;border:1.5px dashed var(--d1);border-radius:99px;padding:6px 14px;font-weight:700;font-size:13px}
+.lines{display:flex;flex-direction:column;gap:8px;margin:10px 0 12px}
+.ln{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#fff;border-radius:14px;padding:9px 14px;text-align:left;min-width:0;transition:transform .15s}
+.ln:hover{transform:translateX(4px)}.ln b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.patch{display:inline-block;background:var(--d);color:#fff;font:800 15px var(--fd);padding:5px 16px;border-radius:10px;border:2px dashed #fff;outline:2px solid var(--d)}
+.meter{height:16px;border-radius:99px;background:#ebe9e2;overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--d2),var(--d3),var(--d4));border-radius:99px;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.lvl{margin-top:10px;font:800 20px var(--fd)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:20px 0 4px}
+.stat{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:14px 16px;min-width:0}
+.stat:nth-child(1) b{color:var(--d1)}.stat:nth-child(2) b{color:var(--d2)}.stat:nth-child(3) b{color:var(--d5)}.stat:nth-child(4) b{color:var(--d4)}.stat:nth-child(5) b{color:var(--d6)}.stat:nth-child(6) b{color:var(--d4)}
+.stat b{display:block;font:800 clamp(20px,3.6vw,25px) var(--fd);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}.stat small{color:var(--mut)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:26px 0 14px}
+.fl{padding:7px 16px;border-radius:99px;border:1.5px solid var(--line);background:var(--surf);font-weight:500;font-size:14px}
+.fl[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.tile{position:relative;overflow:hidden;text-align:left;background:var(--t);border-radius:22px;padding:18px;min-width:0;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;gap:6px}
+.tile::after{content:"";position:absolute;right:-30px;top:-30px;width:100px;height:100px;border-radius:50%;opacity:.3;pointer-events:none;background:repeating-radial-gradient(circle,var(--d) 0 4px,transparent 4px 10px)}
+.tile:hover{transform:translateY(-5px) rotate(-.6deg);box-shadow:0 16px 28px -16px var(--d)}
+.tile .em{width:56px;height:56px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:28px;line-height:1;transition:transform .5s;position:relative;z-index:1}
+.tile:hover .em{transform:rotate(360deg) scale(1.1)}
+.tile h3{font-size:19px;font-weight:800;margin-top:4px;position:relative;z-index:1}
+.tile .amt{font-weight:700;font-variant-numeric:tabular-nums}
+.tile .tg{font-size:11px;color:var(--mut);letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+.tile .meter{height:6px;background:rgba(255,255,255,.75)}.tile .meter i{background:var(--d)}
+.tile.pd{outline:2px dashed var(--d);outline-offset:-8px}
+.pend{align-self:flex-start;background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.when{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.when div{background:#fff;border-radius:16px;padding:10px 18px;min-width:0}.when b{font:800 19px var(--fd);display:block}.when small{color:var(--mut)}
+.when .patch{background:var(--d);color:#fff;padding:5px 16px;border-radius:10px}
+.acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.act{background:#fff;border-radius:20px;padding:16px 12px;text-align:center;min-width:0;transition:transform .2s,background .2s,color .2s}
+.act:hover{transform:translateY(-3px)}.act.on{background:var(--d);color:var(--on);animation:wob .5s}
+.act .em{font-size:40px;display:block;line-height:1.2}.act b{font:800 17px var(--fd);display:block;margin-top:4px}.act small{display:block;min-height:2.6em;opacity:.85}
+@keyframes wob{25%{transform:rotate(-4deg)}75%{transform:rotate(4deg)}}
+.game{margin-top:28px;padding-top:22px;border-top:2px dashed rgba(31,42,92,.2)}.game h3{font-size:24px;font-weight:800}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:400px;margin:14px 0}
+.card{aspect-ratio:1;border-radius:16px;background-color:var(--d1);background-image:radial-gradient(circle,transparent 0 5px,rgba(255,255,255,.3) 5px 7px,transparent 7.5px);background-size:20px 20px;position:relative;overflow:hidden;transition:transform .3s}
+.card .f{position:absolute;inset:0;opacity:0;transition:opacity .2s;background-color:#fff;border:3px solid var(--d3);border-radius:16px}
+.card.up .f,.card.ok .f{opacity:1}.card.ok{transform:scale(.93)}.card.ok .f{border-color:var(--d2)}
+.f.k1{background-image:radial-gradient(circle,transparent 0 9px,var(--d4) 9px 13px,transparent 13.5px);background-size:32px 32px}
+.f.k2{background-image:radial-gradient(var(--d3) 4px,transparent 4.5px);background-size:16px 16px}
+.f.k3{background-image:linear-gradient(45deg,transparent 42%,var(--d2) 42% 58%,transparent 58%),linear-gradient(-45deg,transparent 42%,var(--d2) 42% 58%,transparent 58%)}
+.f.k4{background-image:repeating-radial-gradient(circle at 50% 0,transparent 0 8px,var(--d5) 8px 11px);background-size:100% 50%}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.chart{display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:center;background:#fff;border-radius:24px;padding:24px}
+.chart svg{max-width:100%;height:auto}
+.chart path{cursor:pointer;transition:transform .2s;transform-origin:110px 110px;stroke:#fff;stroke-width:2}.chart path:hover{transform:scale(1.06)}
+.leg{min-width:0;flex:1 1 230px}.leg button{display:flex;align-items:center;gap:10px;margin:2px 0;text-align:left;width:100%;border-radius:10px;padding:5px 8px}
+.leg button:hover{background:var(--t3)}.leg i{width:14px;height:14px;border-radius:50%;flex:none}
+.donors{display:flex;flex-wrap:wrap;gap:12px}
+.dn{background:#fff;border-radius:18px;padding:12px 18px;animation:pop .45s backwards;min-width:0}
+@keyframes pop{from{transform:scale(.6);opacity:0}}
+.dn b{display:block;font:800 18px var(--fd)}.dn span{color:var(--mut);font-size:14px}
+.top{display:inline-block;background:var(--d3);color:#3a2800;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 9px;border-radius:99px;margin-bottom:4px}
+.dn .top{display:inline-flex;align-items:center;gap:4px;color:#3a2800;font-size:11px}
+.st{width:20px;height:20px;flex:none;color:var(--d3)}.top .st{width:12px;height:12px;color:#3a2800}
+.dn .nm{display:flex;align-items:center;gap:8px}
+.twk{display:inline-flex;gap:4px;margin-left:6px}.twk .st{width:18px;height:18px;animation:tw 2.6s ease-in-out infinite}
+.twk .st:nth-child(2){animation-delay:.3s}.twk .st:nth-child(3){animation-delay:.6s}.twk .st:nth-child(4){animation-delay:.9s}.twk .st:nth-child(5){animation-delay:1.2s}
+@keyframes tw{50%{transform:scale(.7) rotate(20deg);opacity:.6}}
+footer{margin-top:64px;text-align:center;padding:10px 20px 20px}
+footer .ms{display:flex;gap:16px;justify-content:center;margin-bottom:14px}
+footer .ms .ic{width:32px;height:32px}
+footer b{font:800 22px var(--fd);display:block}footer span{color:var(--mut)}
+.modal{position:fixed;inset:0;background:rgba(18,22,52,.5);display:none;align-items:center;justify-content:center;z-index:50;padding:14px}
+.modal.on{display:flex}
+.box{background:var(--surf);color:var(--ink);border-radius:26px;max-width:540px;width:100%;max-height:88vh;overflow:auto;padding:24px}
+.q{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:10px 14px;margin:8px 0}
+.q>div{min-width:0}.q.pick{border:2px solid var(--d3)}
+.adm{background:rgba(255,255,255,.75);border:1.5px dashed var(--d1);border-radius:18px;padding:14px;margin:16px 0}
+input,select{font:inherit;padding:9px 12px;border-radius:12px;border:1.5px solid var(--line);background:#fff;color:var(--ink);margin:3px 3px 3px 0;max-width:100%}
+.fbar{position:fixed;right:max(12px,env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:40}
+.toast{position:fixed;left:50%;bottom:calc(70px + env(safe-area-inset-bottom,0px));transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:99px;font-weight:500;opacity:0;transition:.3s;z-index:60;max-width:90vw;text-align:center;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.cf{position:fixed;font:800 22px var(--fd);pointer-events:none;z-index:99;animation:cf 1.2s ease-out forwards}
+@keyframes cf{to{transform:translate(var(--x),var(--y)) rotate(540deg);opacity:0}}
+.empty{color:var(--mut);padding:18px;border:1.5px dashed rgba(31,42,92,.25);border-radius:18px;grid-column:1/-1;background:rgba(255,255,255,.7)}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="m-ring" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="3"><circle cx="20" cy="20" r="16"/><circle cx="20" cy="20" r="9"/></g><circle cx="20" cy="20" r="3" fill="currentColor"/></symbol>
+<symbol id="m-cross" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M24 24l12 12M36 24L24 36"/></g></symbol>
+<symbol id="m-dots" viewBox="0 0 40 40"><g fill="currentColor"><circle cx="8" cy="8" r="3"/><circle cx="20" cy="8" r="3"/><circle cx="32" cy="8" r="3"/><circle cx="8" cy="20" r="3"/><circle cx="20" cy="20" r="3"/><circle cx="32" cy="20" r="3"/><circle cx="8" cy="32" r="3"/><circle cx="20" cy="32" r="3"/><circle cx="32" cy="32" r="3"/></g></symbol>
+<symbol id="m-wave" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M3 10c5-6 8 6 13 0s8 6 13 0 5-4 8-2"/><path d="M3 20c5-6 8 6 13 0s8 6 13 0 5-4 8-2"/><path d="M3 30c5-6 8 6 13 0s8 6 13 0 5-4 8-2"/></g></symbol>
+<symbol id="m-zig" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l6-6 6 6 6-6 6 6 6-6 4 4"/><path d="M3 24l6-6 6 6 6-6 6 6 6-6 4 4"/><path d="M3 36l6-6 6 6 6-6 6 6 6-6 4 4"/></g></symbol>
+<symbol id="m-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.8-6.3 3.8 1.7-7L2 9.2l7.1-.6z"/></symbol>
+<symbol id="m-dia" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M20 3L37 20 20 37 3 20Z"/><path d="M20 12L28 20 20 28 12 20Z"/></g></symbol>
+</defs></svg>
+
+<nav><div class="w"><b><svg class="ic"><use href="#m-ring"/></svg>Àdìrè Vibes</b><div class="links"><a href="#adults">Grown-ups</a><a href="#little">Little Stars</a><a href="#teens">Teens</a><a href="#plan">The Plan</a><a href="#chart">Budget Chart</a><a href="#wall">Wall of Stars</a></div></div></nav>
+<aside class="rail" aria-label="Sections">
+<a href="#top" class="c0" aria-label="Top"><svg class="ic"><use href="#m-dia"/></svg><span>Top</span></a>
+<a href="#adults" class="c4" aria-label="Grown-ups"><svg class="ic"><use href="#m-wave"/></svg><span>Grown-ups</span></a>
+<a href="#little" class="c2" aria-label="Little Stars"><svg class="ic"><use href="#m-cross"/></svg><span>Little Stars</span></a>
+<a href="#teens" class="den" aria-label="Teens"><svg class="ic"><use href="#m-zig"/></svg><span>Teens</span></a>
+<a href="#plan" class="c1" aria-label="The Plan"><svg class="ic"><use href="#m-ring"/></svg><span>The Plan</span></a>
+<a href="#chart" class="c0" aria-label="Budget Chart"><svg class="ic"><use href="#m-dots"/></svg><span>Budget Chart</span></a>
+<a href="#wall" class="c3" aria-label="Wall of Stars"><svg class="ic"><use href="#m-star"/></svg><span>Wall of Stars</span></a>
+</aside>
+
+<div class="w">
+<header class="hero" id="top">
+<i class="disc a"></i><i class="disc b"></i>
+<div class="hl">
+<div class="kick">LagosHoms Ilupeju Estate · End of Year Thanksgiving Party</div>
+<h1><span id="ttl">Àdìrè Vibes</span></h1>
+<p class="tag" id="tag">Good Vibes, Great Company &amp; Unforgettable Memories</p>
+<p class="say">Grown-ups, come dressed up in your best Adire. Be fashionable, get creative and have fun with it.</p>
+<div class="cd" id="cd"></div><div id="dt"></div>
+</div>
+<div class="hr"><div class="strip"></div><div class="in">
+<div class="kick">Save the date</div>
+<div class="d">19 December 2026</div>
+<div class="it"><b>Grown-ups</b><span>5pm till mama calls</span></div>
+<div class="it"><b>Little Stars</b><span>12 noon to 5pm</span></div>
+<div class="it"><b>Teens</b><span>4pm to 8pm</span></div>
+<div class="it"><b>Venue</b><span>Recreation Center</span></div>
+<div class="rsvp"><span style="font-weight:700">RSVP</span><code id="ph">+234 809 466 1043</code><button class="btn gold sm" id="cp">Copy</button></div>
+</div></div>
+</header>
+
+<section id="who" style="padding-top:28px"><div class="pickgrid">
+<a class="pk c4" href="#adults"><span class="bd"><svg class="ic"><use href="#m-wave"/></svg></span><span><b>Grown-ups</b><small>Àdìrè Vibes · 5pm till mama calls</small></span></a>
+<a class="pk c2" href="#little"><span class="bd"><svg class="ic"><use href="#m-cross"/></svg></span><span><b>Little Stars</b><small>Bouncing castles · 12 noon to 5pm</small></span></a>
+<a class="pk den" href="#teens"><span class="bd"><svg class="ic"><use href="#m-zig"/></svg></span><span><b>Teens</b><small>Theme: Denim · 4pm to 8pm</small></span></a>
+</div></section>
+
+<section id="adults"><div class="panel c4"><div class="pn"><div>
+<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-wave"/></svg></span><div><div class="kick">The grown-ups' party · Àdìrè Vibes</div><h2>Grown-ups</h2></div></div>
+<div class="when"><div><b>5pm till mama calls</b><small>Grown-ups party</small></div><div><b>Recreation Center</b><small>19 December 2026</small></div><div><b id="ab">₦0</b><small id="as">Grown-ups only lines</small></div></div>
+<p class="lead" style="margin-top:0">Come in your best Adire. Be fashionable, get creative and have fun with it. Tap a card to wake it up.</p>
+<div class="acts" id="acts-a"></div>
+<div class="kick" style="margin:24px 0 4px">Budget lines just for grown-ups</div>
+<div class="lines" id="al"></div>
+<p style="color:var(--mut);font-size:14px;margin:0">Shared lines like food, drinks and rentals are in The Plan below.</p>
+</div><div class="flb" id="fl-adults"></div></div></div></section>
+
+<section id="little"><div class="panel c2"><div class="pn"><div>
+<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-cross"/></svg></span><div><div class="kick">The children's party</div><h2>Little Stars Zone</h2></div></div>
+<div class="when"><div><b>12 noon to 5pm</b><small>Little Stars party</small></div><div><b>Recreation Center</b><small>19 December 2026</small></div><div><b id="kb">₦0</b><small id="ks">Children's budget</small></div></div>
+<p class="lead" style="margin-top:0">Tap a card to wake it up.</p>
+<div class="acts" id="acts"></div>
+<div class="kick" style="margin:24px 0 4px">Budget lines just for the children</div>
+<div class="lines" id="kl"></div>
+<div class="game"><h3>Adire Match</h3><p class="lead" style="margin:4px 0">Find the four matching pairs in as few tries as you can.</p>
+<div class="cards" id="cards"></div><div class="row"><span id="mv" style="font-weight:700">Tries: 0</span><button class="btn sm" id="rs">Shuffle again</button></div></div>
+</div><div class="flb" id="fl-kids"></div></div></div></section>
+
+<section id="teens"><div class="panel den"><div class="pn"><div>
+<div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-zig"/></svg></span><div><div class="kick">The teenagers' party</div><h2>Denim Zone</h2></div></div>
+<div class="when"><div><b>4pm to 8pm</b><small>Teen party</small></div><div><b>19 December 2026</b><small>Come in your best denim</small></div><div><b id="tb">₦0</b><small id="ts">Teen only lines</small></div></div>
+<p style="margin:0 0 16px"><span class="patch">Theme: Denim</span></p>
+<p class="lead" style="margin-top:0">Come in your best denim. Tap a card to wake it up.</p>
+<div class="acts" id="acts-t"></div>
+<div class="game"><h3>Denim fit check</h3><p class="lead" style="margin:4px 0 14px">Tap the pieces you plan to wear.</p>
+<div class="acts" id="fit"></div><p id="fitmsg" style="font:800 18px var(--fd);margin:14px 0 0">Tap the pieces you plan to wear.</p></div>
+<div class="kick" style="margin:24px 0 4px">Budget lines just for teens</div>
+<div class="lines" id="tl"></div>
+<p style="color:var(--mut);font-size:14px;margin:0">Shared lines like drinks and decoration are in The Plan below.</p>
+</div><div class="flb" id="fl-teens"></div></div></div></section>
+
+<section id="plan"><div class="sh c1"><span class="bd"><svg class="ic"><use href="#m-ring"/></svg></span><h2>Party Power Meter</h2></div><p class="lead">Every naira raised fills the meter. Tap any tile to see the budget and the vendor quotes for that part of the party.</p>
+<div class="meter" role="progressbar" aria-label="Funds raised"><i id="mt"></i></div><div class="lvl" id="lvl">Just getting started</div>
+<div class="stats" id="stats"></div>
+<div class="filters" id="filters" role="group" aria-label="Filter sections"></div>
+<div class="grid" id="tiles"><div class="empty">Budget lines load here. Each one gets a tile, a budget bar and its vendor quotes.</div></div>
+<div class="adm" id="admSec" hidden><b>Add a section</b><br><input id="sn" placeholder="Name (e.g. Photo Booth)"><input id="se" placeholder="Emoji" style="width:80px"><input id="sb" type="number" inputmode="numeric" placeholder="Budget ₦"><select id="sg"><option value="both">Everyone</option><option value="adults">Grown-ups</option><option value="kids">Little Stars</option><option value="teens">Teens</option></select><label><input type="checkbox" id="sp"> Pending</label> <button class="btn sm" id="addSec">Add</button></div></section>
+
+<section id="chart"><div class="panel c0"><div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-dots"/></svg></span><h2>Where the money goes</h2></div><p class="lead">Tap a slice or a name to open that section.</p>
+<div class="chart"><svg id="dn" viewBox="0 0 220 220" width="260" height="260" role="img" aria-label="Budget split by section"></svg><div class="leg" id="leg"></div></div></div></section>
+
+<section id="wall"><div class="panel c3"><div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-star"/></svg></span><h2>Wall of Stars</h2><span class="twk" aria-hidden="true"><svg class="st" style="color:var(--d3)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d4)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d2)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d5)"><use href="#m-star"/></svg><svg class="st" style="color:var(--d1)"><use href="#m-star"/></svg></span></div><p class="lead">The neighbours who made this happen. Thank you!</p><div class="donors" id="donors"><div class="empty">The first star goes here.</div></div>
+<div class="adm" id="admDon" hidden><b>Record a donation</b><br><input id="dnn" placeholder="Donor name"><input id="dna" type="number" inputmode="numeric" placeholder="Amount ₦"><input id="dnf" type="file" accept="image/*,application/pdf"><button class="btn sm" id="addDon">Save donation</button><div id="dmsg" style="font-size:14px;margin-top:6px"></div></div></div></section>
+
+<div class="adm" id="admSet" hidden style="margin-top:40px"><b>Party settings</b><br><input id="cT" placeholder="Party title"><input id="cG" placeholder="Teaser line" style="width:320px"><input id="cD" type="datetime-local"><button class="btn sm" id="saveCfg">Save</button></div>
+</div>
+
+<footer><div class="ms"><span class="c0" style="color:var(--d)"><svg class="ic"><use href="#m-ring"/></svg></span><span class="c1" style="color:var(--d)"><svg class="ic"><use href="#m-cross"/></svg></span><span class="c2" style="color:var(--d)"><svg class="ic"><use href="#m-dots"/></svg></span><span class="c3" style="color:var(--d)"><svg class="ic"><use href="#m-wave"/></svg></span><span class="c4" style="color:var(--d)"><svg class="ic"><use href="#m-dia"/></svg></span></div><b>LagosHoms Ilupeju Estate</b><span>End of Year Thanksgiving Party · 19 December 2026 · Recreation Center</span></footer>
+
+<div class="fbar"><button class="btn gold" id="edit" hidden>Edit mode</button></div>
+<div class="modal" id="mod"><div class="box" id="box"></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const N=n=>"₦"+Math.round(n||0).toLocaleString("en-NG");
+const COL=["var(--c1)","var(--c2)","var(--c3)","var(--c4)","var(--c5)","var(--c6)","var(--c7)","var(--c8)","var(--c9)","var(--c10)","var(--c11)","var(--c12)"];
+const GL={both:"Everyone",adults:"Grown-ups",kids:"Little Stars",teens:"Teens"};
+let db,assets,cfg={},flyers={},secs=[],dons=[],recs={},edit=false,canEdit=false,openId=null,flt="all",arm=null;
+const total=()=>secs.reduce((a,s)=>a+(+s.budget||0),0);
+const raised=()=>dons.reduce((a,d)=>a+(+d.amount||0),0);
+const spent=s=>(s.quotes||[]).filter(q=>q.pick).reduce((a,q)=>a+(+q.amount||0),0);
+const paid=s=>(s.payments||[]).reduce((a,p)=>a+(+p.amt||0),0);const basis=s=>spent(s)||(+s.budget||0);
+const grp=g=>secs.filter(s=>(s.group||"both")===g);
+function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2600)}
+function sure(key,msg){if(arm===key){arm=null;return true}arm=key;toast(msg||"Tap again to confirm");clearTimeout(sure.t);sure.t=setTimeout(()=>arm=null,3000);return false}
+function boom(x,y){const g=["○","✕","●","◇","✦"],c=["#2b3a82","#dfa22b","#2f8f8a","#d56a52","#8a3f6e"];for(let i=0;i<14;i++){const d=document.createElement("div");d.className="cf";d.textContent=g[i%5];d.style.left=x+"px";d.style.top=y+"px";d.style.color=c[i%5];d.style.setProperty("--x",(Math.random()*240-120)+"px");d.style.setProperty("--y",(Math.random()*-200-20)+"px");document.body.appendChild(d);setTimeout(()=>d.remove(),1300)}}
+function tick(){const el=$("cd");if(!cfg.date){el.innerHTML="";$("dt").textContent="Countdown starts when the time is confirmed";return}
+const t=new Date(cfg.date)-Date.now(),v=Math.max(0,t);
+el.innerHTML=[["Days",v/864e5],["Hours",v/36e5%24],["Mins",v/6e4%60],["Secs",v/1e3%60]].map(([l,n])=>`<div><b>${Math.floor(n)}</b><span>${l}</span></div>`).join("");
+$("dt").textContent=t>0?"Counting down to the Little Stars start":"The party is on. Come through!"}
+setInterval(tick,1000);
+const flyBox=(k,label)=>{const id=flyers[k];return `${id?`<button class="flimg" data-fly="${k}" aria-label="Enlarge the ${label} flyer"><img src="${esc(id)}" alt="${label} party flyer" loading="lazy"></button>`:`<div class="flph">The ${label} flyer is coming soon.</div>`}${edit?`<label class="up">${id?"Replace":"Upload"} flyer<input type="file" accept="image/*" data-flyfile="${k}" hidden></label>`:""}`};
+function lines(k,id){const L=grp(k);$(id).innerHTML=L.map(s=>`<button class="ln" data-id="${esc(s.id)}"><span>${esc(s.emoji||"🎁")} ${esc(s.name)}</span><b>${s.pending&&!s.budget?"Pending":N(s.budget)}</b></button>`).join("")||`<div class="empty" style="grid-column:auto">No lines only for this group yet.</div>`}
+function render(){
+$("ttl").textContent=cfg.title||"Àdìrè Vibes";if(cfg.tagline)$("tag").textContent=cfg.tagline;document.title=cfg.title||"Àdìrè Vibes";tick();
+const T=total(),R=raised(),pc=T?Math.min(100,R/T*100):0;
+$("mt").style.width=pc+"%";
+$("lvl").textContent=pc>=100?"Fully funded. Let us party!":pc>=75?"Almost there!":pc>=50?"Halfway and rising":pc>=25?"Warming up":"Just getting started";
+const S=secs.reduce((a,s)=>a+spent(s),0),P=secs.filter(s=>s.pending).length,PD=secs.reduce((a,s)=>a+paid(s),0);
+$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>Target so far</small></div><div class="stat"><b>${N(R)}</b><small>Raised (${pc.toFixed(0)}% of target)</small></div><div class="stat"><b>${N(S)}</b><small>Vendors chosen</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${R>=T?"Above target":"Still to raise"}</small></div><div class="stat"><b>${P}</b><small>Lines awaiting a figure</small></div><div class="stat"><b>${N(PD)}</b><small>Paid to vendors</small></div>`;
+$("filters").innerHTML=[["all","All"],["adults","Grown-ups"],["kids","Little Stars"],["teens","Teens"],["both","Everyone"]].map(([k,l])=>`<button class="fl" data-fl="${k}" aria-pressed="${flt===k}">${l}</button>`).join("");
+const vis=secs.filter(s=>flt==="all"||(s.group||"both")===flt);
+$("tiles").innerHTML=vis.map(s=>{const sp=spent(s),p=s.budget?Math.min(100,sp/s.budget*100):0,pd=s.pending&&!s.budget;
+return`<button class="tile c${secs.indexOf(s)%6} ${pd?"pd":""}" data-id="${esc(s.id)}"><span class="em">${esc(s.emoji||"🎁")}</span><span class="tg">${GL[s.group]||GL.both}</span><h3>${esc(s.name)}</h3>${pd?`<span class="pend">Pending</span>`:`<span class="amt">${N(s.budget)}</span><span class="meter"><i style="width:${p}%;transition:none"></i></span>`}${paid(s)?`<small style="position:relative;z-index:1;font-weight:700">Paid ${N(paid(s))} · Left ${N(Math.max(0,basis(s)-paid(s)))}</small>`:""}<small style="color:var(--mut);position:relative;z-index:1">${(s.quotes||[]).length?(s.quotes.length+" quote(s)"):"No quotes yet"}</small></button>`}).join("")||`<div class="empty">Nothing here yet.</div>`;
+[["adults","ab","as","Grown-ups only lines"],["kids","kb","ks","Children only lines"],["teens","tb","ts","Teen only lines"]].forEach(([g,b,l,lab])=>{const x=grp(g).reduce((a,s)=>a+(+s.budget||0),0);$(b).textContent=N(x);$(l).textContent=T&&x?`${lab} (${(x/T*100).toFixed(0)}% of total)`:lab});
+lines("adults","al");lines("kids","kl");lines("teens","tl");
+$("fl-adults").innerHTML=flyBox("adults","grown-ups");$("fl-kids").innerHTML=flyBox("kids","children");$("fl-teens").innerHTML=flyBox("teens","teens");
+let a=-Math.PI/2,paths="";const r=100,c=110,live=secs.filter(s=>s.budget>0);
+live.forEach((s,i)=>{const f=s.budget/T,b=a+f*2*Math.PI*0.9999,L=f>.5?1:0;
+paths+=`<path data-id="${esc(s.id)}" style="fill:${COL[i%12]}" d="M${c+r*Math.cos(a)} ${c+r*Math.sin(a)} A${r} ${r} 0 ${L} 1 ${c+r*Math.cos(b)} ${c+r*Math.sin(b)} L${c+55*Math.cos(b)} ${c+55*Math.sin(b)} A55 55 0 ${L} 0 ${c+55*Math.cos(a)} ${c+55*Math.sin(a)}Z"/>`;a=b});
+$("dn").innerHTML=(paths||`<circle cx="110" cy="110" r="78" fill="none" stroke="var(--line)" stroke-width="45"/>`)+`<text x="110" y="106" text-anchor="middle" style="fill:var(--mut)" font-size="13">Total</text><text x="110" y="126" text-anchor="middle" style="fill:var(--ink)" font-size="14" font-weight="700">${N(T)}</text>`;
+$("leg").innerHTML=live.map((s,i)=>`<button data-id="${esc(s.id)}"><i style="background:${COL[i%12]}"></i><span>${esc(s.name)}: ${N(s.budget)} (${(s.budget/T*100).toFixed(0)}%)</span></button>`).join("")+(secs.some(s=>!s.budget)?`<p style="color:var(--mut);font-size:14px;margin:10px 0 0">Pending lines join the chart once they have a figure.</p>`:"");
+const top=dons.reduce((m,d)=>d.amount>(m?.amount||0)?d:m,null);
+$("donors").innerHTML=dons.map((d,i)=>`<div class="dn" style="animation-delay:${i*.05}s">${top&&d.id===top.id&&dons.length>1?`<span class="top"><svg class="st"><use href="#m-star"/></svg>Top star</span>`:""}<div class="nm"><svg class="st"><use href="#m-star"/></svg><b>${esc(d.name)}</b></div><span>${N(d.amount)}${T?` · ${(d.amount/T*100).toFixed(1)}% of target`:""}</span>${canEdit&&recs[d.id]?`<br><a href="/_blob/${esc(recs[d.id])}" target="_blank" rel="noopener" style="color:var(--d1);font-size:13px">View receipt</a>`:""}${edit?` <button class="btn sm ghost" data-deld="${esc(d.id)}">Remove</button>`:""}</div>`).join("")||`<div class="empty">The first star goes here.</div>`;
+["admSec","admDon","admSet"].forEach(k=>$(k).hidden=!edit);
+$("edit").textContent=edit?"Done editing":"Edit mode";
+if(openId)showSec(openId)}
+function showSec(id){const s=secs.find(x=>x.id===id);if(!s){$("mod").classList.remove("on");return}openId=id;const sp=spent(s),pd=paid(s),bs=basis(s);
+$("box").innerHTML=`<div style="text-align:center" class="c${secs.indexOf(s)%6}"><span style="width:84px;height:84px;border-radius:50%;background:var(--t);display:grid;place-items:center;font-size:44px;margin:0 auto">${esc(s.emoji||"🎁")}</span><div class="kick" style="margin-top:10px">${GL[s.group]||GL.both}</div><h2>${esc(s.name)}</h2><p class="lead" style="margin:8px auto 14px">${s.pending&&!s.budget?"Pending. No figure yet.":`Budget ${N(s.budget)} · Chosen ${N(sp)} · ${s.budget?((sp/s.budget)*100).toFixed(0):0}% used`}${s.desc?`<br>${esc(s.desc)}`:""}</p></div>
+${(s.quotes||[]).map((q,i)=>`<div class="q ${q.pick?"pick":""}"><div><b>${esc(q.vendor)}</b><br><small>${esc(q.note||"")}</small></div><div style="text-align:right"><b>${N(q.amount)}</b>${q.pick?"<br><small>Chosen</small>":""}${edit?`<br><button class="btn sm ghost" data-pick="${i}">${q.pick?"Unpick":"Pick"}</button> <button class="btn sm ghost" data-delq="${i}">Remove</button>`:""}</div></div>`).join("")||"<p class='lead' style='text-align:center'>No quotes yet. Check back soon.</p>"}
+<div class="kick" style="margin:18px 0 6px">Payments to vendor</div>
+<div class="when" style="margin:6px 0"><div style="background:var(--bg)"><b>${N(pd)}</b><small>Paid so far</small></div><div style="background:var(--bg)"><b>${N(Math.max(0,bs-pd))}</b><small>Left to pay</small></div></div>
+<p class="lead" style="margin:0 0 8px;font-size:13px">Left to pay is measured against the ${sp?"chosen quote":"budget"}.</p>
+${(s.payments||[]).map((p,i)=>`<div class="q"><div><b>${N(p.amt)}</b><br><small>${esc(p.note||"Payment")} · ${esc(p.date||"")}</small></div>${edit?`<button class="btn sm ghost" data-delp="${i}">Remove</button>`:""}</div>`).join("")||"<p class='lead' style='margin:4px 0'>No payments recorded yet.</p>"}
+${bs&&pd>bs?`<p style="color:var(--d4);font-weight:700">Paid is more than the amount owed.</p>`:""}
+${edit?`<div class="adm"><input id="pa" type="number" inputmode="numeric" placeholder="Paid ₦"><input id="pn" placeholder="Note (e.g. 50% deposit)"><button class="btn sm" id="addPay">Record payment</button></div>`:""}
+${edit?`<div class="adm"><input id="qv" placeholder="Vendor"><input id="qa" type="number" inputmode="numeric" placeholder="Quote ₦"><input id="qn" placeholder="Note"><button class="btn sm" id="addQ">Add quote</button><br><input id="eb" type="number" inputmode="numeric" value="${+s.budget||0}"><select id="eg">${[["both","Everyone"],["adults","Grown-ups"],["kids","Little Stars"],["teens","Teens"]].map(([v,l])=>`<option value="${v}" ${(s.group||"both")===v?"selected":""}>${l}</option>`).join("")}</select><label><input type="checkbox" id="ep" ${s.pending?"checked":""}> Pending</label> <button class="btn sm" id="saveB">Update budget</button> <button class="btn sm ghost" id="delS">Delete section</button></div>`:""}
+<p style="text-align:center;margin:16px 0 0"><button class="btn" id="closeM">Close</button></p>`;$("mod").classList.add("on")}
+const ref=(c,id)=>db.collection(c).doc(id);
+const mut=async(s,f)=>{const q=[...(s.quotes||[])];f(q);await ref("sections",s.id).update({quotes:q})};
+let deck=[],pk=[],tries=0,lock=false;
+function deal(){const k=[1,2,3,4,1,2,3,4].sort(()=>Math.random()-.5);deck=k;pk=[];tries=0;lock=false;$("mv").textContent="Tries: 0";
+$("cards").innerHTML=k.map((v,i)=>`<button class="card" data-c="${i}" aria-label="Card ${i+1}"><span class="f k${v}"></span></button>`).join("")}
+function flip(i){const el=$("cards").children[i];if(lock||el.classList.contains("up")||el.classList.contains("ok"))return;el.classList.add("up");pk.push(i);
+if(pk.length===2){tries++;$("mv").textContent="Tries: "+tries;lock=true;const[a,b]=pk,A=$("cards").children[a],B=$("cards").children[b];
+if(deck[a]===deck[b]){setTimeout(()=>{A.className="card ok";B.className="card ok";pk=[];lock=false;if([...$("cards").children].every(x=>x.classList.contains("ok"))){toast(`All matched in ${tries} tries!`);const r=$("cards").getBoundingClientRect();boom(r.left+r.width/2,r.top+r.height/2)}},350)}
+else setTimeout(()=>{A.classList.remove("up");B.classList.remove("up");pk=[];lock=false},800)}}
+const mkActs=(id,list,cls)=>{$(id).innerHTML=list.map(([e,t,d],i)=>`<button class="act ${cls[i%cls.length]}"><span class="em">${e}</span><b>${t}</b><small>${d}</small></button>`).join("")};
+mkActs("acts-a",[["🍛","Food","Come hungry"],["🍹","Drinks","Plenty to sip"],["🎤","Karaoke","Take the mic"],["🎲","Games","Play to win"],["🎶","Music","Dance till mama calls"]],["c0","c1","c3","c2","c4"]);
+mkActs("acts",[["🏰","Bouncing castles","Jump till you drop"],["🎲","Games","Prizes for the winners"],["🎶","Music","Dance moves welcome"],["🦸","Characters","Fun faces walking around"],["🍽️","Food and drinks","Snacks and sips"],["🎁","A gift for every child","120 kids, one gift each"]],["c0","c1","c3","c4","c5","c2"]);
+mkActs("acts-t",[["🍔","Food","Eat up"],["🥤","Drinks","Stay hydrated"],["🎮","Games and more","Play, laugh, repeat"],["👖","Denim","Wear your best"]],["den"]);
+const FIT=[["🧥","Jacket"],["👖","Jeans"],["🧢","Bucket hat"],["👟","Sneakers"],["🧷","Patches"]];let fit=new Set();
+function drawFit(){$("fit").innerHTML=FIT.map(([e,n],i)=>`<button class="act den${fit.has(i)?" on":""}" data-fit="${i}"><span class="em">${e}</span><b>${n}</b></button>`).join("");const k=fit.size;$("fitmsg").textContent=k===0?"Tap the pieces you plan to wear.":k<3?`${k} of 5 pieces. Keep going.`:k<5?`${k} of 5 pieces. Looking sharp!`:"Full denim. You are ready for the party!"}
+deal();drawFit();
+document.addEventListener("click",async e=>{const t=e.target,g=x=>t.closest(x);
+if(g(".tile,.btn,.act,.fl,.leg button,.rail a,.ln,.pk"))boom(e.clientX,e.clientY);
+try{
+if(g(".fl")){flt=g(".fl").dataset.fl;render()}
+else if(g("[data-fly]")){const k=g("[data-fly]").dataset.fly;if(flyers[k]){openId=null;$("box").innerHTML=`<img src="${esc(flyers[k])}" alt="Party flyer" style="display:block;max-width:100%;max-height:76vh;width:auto;height:auto;margin:0 auto;border-radius:18px"><p style="text-align:center;margin:14px 0 0"><button class="btn" id="closeM">Close</button></p>`;$("mod").classList.add("on")}}
+else if(g("[data-fit]")){const i=+g("[data-fit]").dataset.fit;fit.has(i)?fit.delete(i):fit.add(i);drawFit();if(fit.size===5)boom(e.clientX,e.clientY)}
+else if(g(".act"))g(".act").classList.toggle("on");
+else if(g(".card"))flip(+g(".card").dataset.c);
+else if(t.id==="rs")deal();
+else if(t.id==="cp"){try{await navigator.clipboard.writeText("+2348094661043");toast("Number copied")}catch(x){const r=document.createRange();r.selectNodeContents($("ph"));const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Number selected, copy it")}}
+else if(g("[data-pick]")){const s=secs.find(x=>x.id===openId),i=+g("[data-pick]").dataset.pick;await mut(s,q=>q[i].pick=!q[i].pick)}
+else if(g("[data-delq]")){const s=secs.find(x=>x.id===openId);await mut(s,q=>q.splice(+g("[data-delq]").dataset.delq,1))}
+else if(g("[data-delp]")){const s=secs.find(x=>x.id===openId),i=+g("[data-delp]").dataset.delp;if(sure("p"+openId+i,"Tap Remove again to delete this payment")){const p=[...(s.payments||[])];p.splice(i,1);await ref("sections",s.id).update({payments:p})}}
+else if(t.id==="addPay"){const s=secs.find(x=>x.id===openId),a=+$("pa").value;if(!a||a<=0){toast("Add the amount paid");return}const p=[...(s.payments||[]),{amt:a,note:$("pn").value.trim(),date:new Date().toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}),ts:Date.now()}];await ref("sections",s.id).update({payments:p});toast("Payment recorded")}
+else if(t.id==="addQ"){const s=secs.find(x=>x.id===openId),v=$("qv").value.trim();if(v)await mut(s,q=>q.push({vendor:v,amount:+$("qa").value||0,note:$("qn").value}))}
+else if(t.id==="saveB"){await ref("sections",openId).update({budget:+$("eb").value||0,pending:$("ep").checked,group:$("eg").value});toast("Section updated")}
+else if(t.id==="delS"){if(sure("s"+openId,"Tap Delete section again to remove it")){const i=openId;openId=null;$("mod").classList.remove("on");await ref("sections",i).delete()}}
+else if(t.id==="closeM"||t===$("mod")){openId=null;$("mod").classList.remove("on")}
+else if(g("[data-deld]")){const id=g("[data-deld]").dataset.deld;if(sure("d"+id,"Tap Remove again to delete this record")){await ref("donors",id).delete();if(recs[id])await ref("receipts",id).delete()}}
+else if(g(".tile,.leg button,.ln,path[data-id]"))showSec(g("[data-id]").dataset.id);
+else if(t.id==="addSec"){const n=$("sn").value.trim();if(!n){toast("Add a name first");return}const id="s"+Date.now();await ref("sections",id).set({name:n,emoji:$("se").value||"🎁",budget:+$("sb").value||0,quotes:[],ts:Date.now(),group:$("sg").value,pending:$("sp").checked});["sn","se","sb"].forEach(k=>$(k).value="");toast("Section added")}
+else if(t.id==="saveCfg"){await ref("config","main").set({title:$("cT").value,tagline:$("cG").value,date:$("cD").value});toast("Saved")}
+else if(t.id==="edit"){edit=!edit;render()}
+else if(t.id==="addDon"){const n=$("dnn").value.trim(),a=+$("dna").value,f=$("dnf").files[0];if(!n||!a){$("dmsg").textContent="Add a name and amount.";return}
+let rid=null;if(f){if(!assets){$("dmsg").textContent="Receipt upload is not available here.";return}$("dmsg").textContent="Uploading receipt...";rid=(await assets.upload(f)).id}
+const id="d"+Date.now();if(rid)await ref("receipts",id).set({assetId:rid});
+await ref("donors",id).set({name:n,amount:a,hasReceipt:!!rid,ts:Date.now()});["dnn","dna","dnf"].forEach(k=>$(k).value="");$("dmsg").textContent="Saved. Thank you!"}
+}catch(err){toast("Could not save: "+(err.message||err.code||err))}});
+document.addEventListener("change",async e=>{const t=e.target,k=t.dataset&&t.dataset.flyfile;if(!k)return;const f=t.files[0];if(!f)return;
+if(!assets){toast("Flyer upload is not available here");return}
+try{toast("Uploading flyer...");const r=await assets.upload(f);await db.collection("config").doc("flyers").set({...flyers,[k]:r.id});toast("Flyer updated")}catch(err){toast("Could not upload: "+(err.message||err.code||err))}});
+(async()=>{
+$("edit").hidden=!canEdit;
+render();
+try{const r=await fetch("data.json",{cache:"no-cache"});const d=await r.json();cfg=d.config||{};flyers=d.flyers||{};secs=(d.sections||[]).slice().sort((a,b)=>(a.ts||0)-(b.ts||0));dons=(d.donors||[]).slice().sort((a,b)=>(a.ts||0)-(b.ts||0));render()}catch(e){$("tiles").innerHTML=`<div class="empty">Could not load the party plan. Please refresh.</div>`}
+})();
+</script>
+</body>
+</html>

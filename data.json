@@ -1,0 +1,194 @@
+{
+ "config": {
+  "title": "Àdìrè Vibes",
+  "tagline": "Good Vibes, Great Company & Unforgettable Memories",
+  "date": "2026-12-19T12:00"
+ },
+ "flyers": {
+  "adults": "flyers/adults.jpg",
+  "kids": "flyers/kids.jpg",
+  "teens": "flyers/teens.jpg"
+ },
+ "sections": [
+  {
+   "id": "s01",
+   "name": "DJ",
+   "emoji": "🎧",
+   "budget": 200000,
+   "group": "both",
+   "pending": false,
+   "ts": 1,
+   "quotes": []
+  },
+  {
+   "id": "s03",
+   "name": "MC for Adults",
+   "emoji": "🎤",
+   "budget": 120000,
+   "group": "adults",
+   "pending": false,
+   "ts": 2,
+   "quotes": []
+  },
+  {
+   "id": "s04",
+   "name": "Photography & Videography",
+   "emoji": "📸",
+   "budget": 150000,
+   "group": "both",
+   "pending": false,
+   "ts": 4,
+   "quotes": []
+  },
+  {
+   "id": "s06",
+   "name": "Drinks",
+   "emoji": "🍹",
+   "budget": 620400,
+   "group": "both",
+   "pending": false,
+   "ts": 8,
+   "quotes": []
+  },
+  {
+   "id": "s07",
+   "name": "Rentals",
+   "emoji": "🪑",
+   "budget": 1144250,
+   "group": "both",
+   "pending": false,
+   "ts": 11,
+   "quotes": []
+  },
+  {
+   "id": "s08",
+   "name": "Decoration",
+   "emoji": "🎈",
+   "budget": 0,
+   "group": "both",
+   "pending": true,
+   "ts": 12,
+   "quotes": []
+  },
+  {
+   "id": "s09",
+   "name": "Food",
+   "emoji": "🍛",
+   "budget": 1357900,
+   "group": "both",
+   "pending": false,
+   "ts": 5,
+   "quotes": []
+  },
+  {
+   "id": "s10",
+   "name": "Small Chops & Grills",
+   "emoji": "🍢",
+   "budget": 1194000,
+   "group": "both",
+   "pending": false,
+   "ts": 7,
+   "quotes": []
+  },
+  {
+   "id": "s11",
+   "name": "Children’s Entertainment",
+   "emoji": "🏰",
+   "budget": 1110000,
+   "group": "kids",
+   "pending": false,
+   "ts": 13,
+   "quotes": [],
+   "desc": "Bouncing castles, games, music and fun characters, 12 noon to 5pm."
+  },
+  {
+   "id": "s12",
+   "name": "Cow + Slaughtering",
+   "emoji": "🐄",
+   "budget": 950000,
+   "group": "both",
+   "pending": false,
+   "ts": 10,
+   "quotes": []
+  },
+  {
+   "id": "s13",
+   "name": "Asun, 2 Goats + Logistics",
+   "emoji": "🐐",
+   "budget": 320000,
+   "group": "adults",
+   "pending": false,
+   "ts": 9,
+   "quotes": []
+  },
+  {
+   "id": "s18",
+   "name": "Amala (100 guests)",
+   "emoji": "🥘",
+   "budget": 350000,
+   "group": "adults",
+   "pending": false,
+   "ts": 6,
+   "quotes": []
+  },
+  {
+   "id": "s19",
+   "name": "Gifts for Kids",
+   "emoji": "🎁",
+   "budget": 360000,
+   "group": "kids",
+   "pending": false,
+   "ts": 15,
+   "quotes": [],
+   "desc": "120 kids at ₦3,000 each."
+  },
+  {
+   "id": "s20",
+   "name": "Karaoke",
+   "emoji": "🎶",
+   "budget": 120000,
+   "group": "adults",
+   "pending": false,
+   "ts": 3,
+   "quotes": []
+  },
+  {
+   "id": "s21",
+   "name": "Ice",
+   "emoji": "🧊",
+   "budget": 20000,
+   "group": "both",
+   "pending": false,
+   "ts": 16,
+   "quotes": []
+  },
+  {
+   "id": "s22",
+   "name": "Ice Cream & Cake",
+   "emoji": "🍰",
+   "budget": 280000,
+   "group": "both",
+   "pending": false,
+   "ts": 17,
+   "quotes": []
+  },
+  {
+   "id": "s23",
+   "name": "Party Costumes",
+   "emoji": "🎭",
+   "budget": 91500,
+   "group": "both",
+   "pending": false,
+   "ts": 18,
+   "quotes": []
+  }
+ ],
+ "donors": [
+  {
+   "id": "d1794246935686",
+   "name": "Praise",
+   "amount": 200000,
+   "ts": 1794246935686
+  }
+ ]
+}
