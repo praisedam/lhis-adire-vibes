@@ -242,7 +242,7 @@ input,select{font:inherit;padding:9px 12px;border-radius:12px;border:1.5px solid
 
 <section id="teens"><div class="panel den"><div class="pn"><div>
 <div class="sh"><span class="bd" style="background:#fff"><svg class="ic"><use href="#m-zig"/></svg></span><div><div class="kick" data-t="teens_kick"></div><h2 data-t="teens_h2"></h2></div></div>
-<div class="when"><div><b data-t="time_teens"></b><small data-t="teens_when_small"></small></div><div><b data-t="party_date"></b><small data-t="teens_when2"></small></div><div><b id="tb">₦0</b><small id="ts"></small></div></div>
+<div class="when"><div><b data-t="time_teens"></b><small data-t="teens_when_small"></small></div><div><b data-t="party_date"></b><small data-t="teens_when2"></small></div></div>
 <p style="margin:0 0 16px"><span class="patch" data-t="teens_patch"></span></p>
 <p class="lead" style="margin-top:0" data-t="teens_lead"></p>
 <div class="acts" id="acts-t"></div>
@@ -301,12 +301,12 @@ const T=total(),R=raised(),pc=T?Math.min(100,R/T*100):0;
 $("mt").style.width=pc+"%";
 $("lvl").textContent=tx(pc>=100?"lvl_100":pc>=75?"lvl_75":pc>=50?"lvl_50":pc>=25?"lvl_25":"lvl_0");
 const S=secs.reduce((a,s)=>a+spent(s),0),P=secs.filter(s=>s.pending).length,PD=secs.reduce((a,s)=>a+paid(s),0);
-$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>${esc(tx("stat_target"))}</small></div><div class="stat"><b>${N(R)}</b><small>${esc(tx("stat_raised",{pct:pc.toFixed(0)}))}</small></div><div class="stat"><b>${N(S)}</b><small>${esc(tx("stat_vendors"))}</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${esc(tx(R>=T?"stat_above":"stat_left"))}</small></div><div class="stat"><b>${N(PD)}</b><small>${esc(tx("stat_paid"))}</small></div>`;
+$("stats").innerHTML=`<div class="stat"><b>${N(T)}</b><small>${esc(tx("stat_target"))}</small></div><div class="stat"><b>${N(R)}</b><small>${esc(tx("stat_raised",{pct:pc.toFixed(0)}))}</small></div><div class="stat"><b>${N(Math.abs(R-T))}</b><small>${esc(tx(R>=T?"stat_above":"stat_left"))}</small></div><div class="stat"><b>${N(PD)}</b><small>${esc(tx("stat_paid"))}</small></div>`;
 $("filters").innerHTML=["all","adults","kids","teens","both"].map(k=>`<button class="fl" data-fl="${k}" aria-pressed="${flt===k}">${esc(tx("lbl_"+k))}</button>`).join("");
 const vis=secs.filter(s=>flt==="all"||(s.group||"both")===flt);
 $("tiles").innerHTML=vis.map(s=>{const sp=spent(s),p=s.budget?Math.min(100,sp/s.budget*100):0,pd=s.pending&&!s.budget;
 return`<button class="tile c${secs.indexOf(s)%6} ${pd?"pd":""}" data-id="${esc(s.id)}"><span class="em">${esc(s.emoji||"🎁")}</span><span class="tg">${GL[s.group]||GL.both}</span><h3>${esc(s.name)}</h3>${pd?`<span class="pend">${esc(tx("pending"))}</span>`:`<span class="amt">${N(s.budget)}</span><span class="meter"><i style="width:${p}%;transition:none"></i></span>`}${paid(s)?`<small style="position:relative;z-index:1;font-weight:700">Paid ${N(paid(s))} · Left ${N(Math.max(0,basis(s)-paid(s)))}</small>`:""}<small style="color:var(--mut);position:relative;z-index:1">${(s.quotes||[]).length?(s.quotes.length+" quote(s)"):tx("no_quotes")}</small></button>`}).join("")||`<div class="empty">Nothing here yet.</div>`;
-[["adults","ab","as","adults_box_label"],["kids","kb","ks","kids_box_label"],["teens","tb","ts","teens_box_label"]].forEach(([g,b,l,lk])=>{const lab=tx(lk);const x=grp(g).reduce((a,s)=>a+(+s.budget||0),0);$(b).textContent=N(x);$(l).textContent=T&&x?`${lab} (${(x/T*100).toFixed(0)}% of total)`:lab});
+[["adults","ab","as","adults_box_label"],["kids","kb","ks","kids_box_label"]].forEach(([g,b,l,lk])=>{const lab=tx(lk);const x=grp(g).reduce((a,s)=>a+(+s.budget||0),0);$(b).textContent=N(x);$(l).textContent=T&&x?`${lab} (${(x/T*100).toFixed(0)}% of total)`:lab});
 $("fl-adults").innerHTML=flyBox("adults","adults");$("fl-kids").innerHTML=flyBox("kids","children");$("fl-teens").innerHTML=flyBox("teens","teens");
 let a=-Math.PI/2,paths="";const r=100,c=110,live=secs.filter(s=>s.budget>0);
 live.forEach((s,i)=>{const f=s.budget/T,b=a+f*2*Math.PI*0.9999,L=f>.5?1:0;
