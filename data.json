@@ -325,12 +325,6 @@
  },
  "donors": [
   {
-   "id": "d1794642749521",
-   "name": "Tunde DodoWilliams",
-   "amount": 400000,
-   "ts": 1794642749817
-  },
-  {
    "id": "d1794643086066",
    "name": "The Bamgbopas",
    "amount": 300000,
@@ -341,6 +335,18 @@
    "name": "The Leramohs",
    "amount": 400000,
    "ts": 1794643108750
+  },
+  {
+   "id": "d1794761835978",
+   "name": "Idris Toriola",
+   "amount": 300000,
+   "ts": 1794761835978
+  },
+  {
+   "id": "d1794761950062",
+   "name": "Tunde DodoWilliams",
+   "amount": 500000,
+   "ts": 1794761950460
   }
  ]
 }
