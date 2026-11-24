@@ -44,7 +44,7 @@
    "id": "s06",
    "name": "Drinks",
    "emoji": "🍹",
-   "budget": 620400,
+   "budget": 720400,
    "group": "both",
    "pending": false,
    "ts": 8,
@@ -64,9 +64,9 @@
    "id": "s08",
    "name": "Decoration",
    "emoji": "🎈",
-   "budget": 0,
+   "budget": 300000,
    "group": "both",
-   "pending": true,
+   "pending": false,
    "ts": 12,
    "quotes": []
   },
@@ -74,7 +74,7 @@
    "id": "s09",
    "name": "Food",
    "emoji": "🍛",
-   "budget": 1707900,
+   "budget": 2007900,
    "group": "both",
    "pending": false,
    "ts": 5,
@@ -84,7 +84,7 @@
    "id": "s10",
    "name": "Small Chops & Grills",
    "emoji": "🍢",
-   "budget": 1194000,
+   "budget": 1548500,
    "group": "both",
    "pending": false,
    "ts": 7,
@@ -171,6 +171,35 @@
    "pending": false,
    "ts": 18,
    "quotes": []
+  },
+  {
+   "id":"s24",
+   "name":"Ice Cream for Kids",
+   "emoji":"🍦",
+   "budget":200000,
+   "group":"kids",
+   "pending":false,
+   "ts":19,
+   "quotes":[]
+  },
+  {
+ "id":"s25",
+   "name":"Water",
+   "emoji":"💧",
+   "budget":46000,
+   "group":"both",
+   "pending":false,
+   "ts":20,
+   "quotes":[]
+  },
+  {"id":"s26",
+   "name":"Miscellaneous",
+   "emoji":"🧾",
+   "budget":300000,
+   "group":"both",
+   "pending":false,
+   "ts":21,
+   "quotes":[]
   }
  ],
  "text": {
@@ -564,6 +593,12 @@
    "name": "Anonymous",
    "amount": 90000,
    "ts": 17947620504102
+  },
+  {
+   "id": "d1794761950113",
+   "name": "Tolulope",
+   "amount": 150000,
+   "ts": 17947620504103
   }
  ]
 }
